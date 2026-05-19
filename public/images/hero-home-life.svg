@@ -1,22 +1,36 @@
-<svg width="720" height="560" viewBox="0 0 720 560" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="妈妈和宝宝在自然光家中互动">
-  <rect width="720" height="560" rx="36" fill="#FBF7EF"/>
-  <path d="M58 430C112 344 194 320 274 344C350 367 402 410 488 374C566 342 630 370 680 430V520H58V430Z" fill="#E7F0EC"/>
-  <rect x="82" y="78" width="166" height="220" rx="28" fill="#FFF8EC" stroke="#E2D3C0" stroke-width="8"/>
-  <path d="M122 198C142 168 186 162 211 190" stroke="#CFAE8E" stroke-width="12" stroke-linecap="round"/>
-  <circle cx="406" cy="164" r="72" fill="#F2C9A5"/>
-  <path d="M334 210C354 154 410 122 464 138C506 151 533 184 540 229C499 252 454 260 409 251C378 245 352 232 334 210Z" fill="#7F9B82"/>
-  <path d="M382 162C391 152 404 152 413 162" stroke="#2F332F" stroke-width="7" stroke-linecap="round"/>
-  <path d="M450 162C459 152 472 152 481 162" stroke="#2F332F" stroke-width="7" stroke-linecap="round"/>
-  <path d="M410 198C429 211 454 211 474 198" stroke="#2F332F" stroke-width="7" stroke-linecap="round"/>
-  <path d="M292 438C304 334 370 268 454 272C546 276 612 344 626 438H292Z" fill="#FFF8EC" stroke="#E2D3C0" stroke-width="8"/>
-  <circle cx="282" cy="332" r="46" fill="#F4D8BF"/>
-  <path d="M235 394C244 355 275 332 315 337C357 342 385 374 392 421H232C231 411 232 402 235 394Z" fill="#BFD2C4"/>
-  <path d="M265 327C275 316 292 316 303 327" stroke="#2F332F" stroke-width="6" stroke-linecap="round"/>
-  <rect x="116" y="394" width="96" height="70" rx="16" fill="#FFFFFF" stroke="#D7C8B7" stroke-width="8"/>
-  <path d="M140 429H188" stroke="#7F9B82" stroke-width="9" stroke-linecap="round"/>
-  <path d="M164 406V452" stroke="#7F9B82" stroke-width="9" stroke-linecap="round"/>
-  <rect x="538" y="362" width="72" height="58" rx="14" fill="#FFFFFF" stroke="#D7C8B7" stroke-width="8"/>
-  <circle cx="563" cy="392" r="8" fill="#7F9B82"/>
-  <circle cx="585" cy="392" r="8" fill="#F2C9A5"/>
-  <path d="M86 352H250" stroke="#D7C8B7" stroke-width="14" stroke-linecap="round"/>
+<svg width="760" height="560" viewBox="0 0 760 560" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="妈妈陪宝宝倒水、擦桌、收纳玩具和洗水果的居家蒙氏场景">
+  <rect width="760" height="560" rx="36" fill="#FBF7EF"/>
+  <rect x="44" y="42" width="672" height="476" rx="30" fill="#FFF8EC" stroke="#E2D3C0" stroke-width="8"/>
+  <path d="M84 416C139 342 224 326 304 354C376 378 430 414 514 376C587 344 650 370 690 426V492H84V416Z" fill="#E7F0EC"/>
+  <rect x="86" y="72" width="156" height="198" rx="24" fill="#F7F0E4" stroke="#E2D3C0" stroke-width="7"/>
+  <path d="M122 204C148 164 196 164 220 204" stroke="#CFAE8E" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="438" cy="143" r="58" fill="#F2C9A5"/>
+  <path d="M382 179C396 134 439 108 484 119C520 128 544 154 550 191C516 208 480 214 443 208C417 204 397 194 382 179Z" fill="#7F9B82"/>
+  <path d="M416 143C423 136 433 136 440 143" stroke="#2F332F" stroke-width="6" stroke-linecap="round"/>
+  <path d="M466 143C473 136 483 136 490 143" stroke="#2F332F" stroke-width="6" stroke-linecap="round"/>
+  <path d="M435 172C451 182 470 182 486 172" stroke="#2F332F" stroke-width="6" stroke-linecap="round"/>
+  <path d="M344 394C356 304 414 247 488 250C568 254 626 313 638 394H344Z" fill="#FFF8EC" stroke="#E2D3C0" stroke-width="7"/>
+  <circle cx="270" cy="308" r="42" fill="#F4D8BF"/>
+  <path d="M226 365C235 330 263 310 300 315C338 320 364 349 370 392H224C222 382 223 373 226 365Z" fill="#BFD2C4"/>
+  <path d="M254 304C263 294 279 294 289 304" stroke="#2F332F" stroke-width="5" stroke-linecap="round"/>
+  <path d="M366 340L314 352" stroke="#7F9B82" stroke-width="12" stroke-linecap="round"/>
+  <rect x="102" y="356" width="108" height="70" rx="16" fill="#FFFFFF" stroke="#D7C8B7" stroke-width="8"/>
+  <path d="M124 390H186" stroke="#7F9B82" stroke-width="8" stroke-linecap="round"/>
+  <text x="116" y="456" fill="#4F6F55" font-family="Arial, sans-serif" font-size="22" font-weight="700">擦桌子</text>
+  <rect x="454" y="326" width="70" height="74" rx="12" fill="#E7F0EC" stroke="#7F9B82" stroke-width="8"/>
+  <path d="M524 350C558 348 564 378 530 382" stroke="#7F9B82" stroke-width="8" stroke-linecap="round"/>
+  <rect x="576" y="350" width="48" height="56" rx="10" fill="#FFFFFF" stroke="#D7C8B7" stroke-width="8"/>
+  <path d="M468 426H626" stroke="#D7C8B7" stroke-width="12" stroke-linecap="round"/>
+  <text x="464" y="456" fill="#4F6F55" font-family="Arial, sans-serif" font-size="22" font-weight="700">倒水</text>
+  <rect x="86" y="274" width="82" height="56" rx="12" fill="#FFFFFF" stroke="#D7C8B7" stroke-width="7"/>
+  <circle cx="120" cy="302" r="14" fill="#F2C9A5"/>
+  <rect x="174" y="286" width="42" height="42" rx="9" fill="#BFD2C4"/>
+  <text x="82" y="346" fill="#4F6F55" font-family="Arial, sans-serif" font-size="20" font-weight="700">收纳玩具</text>
+  <path d="M554 220H654L640 270H568L554 220Z" fill="#E7F0EC" stroke="#7F9B82" stroke-width="7" stroke-linejoin="round"/>
+  <circle cx="586" cy="208" r="14" fill="#F2C9A5"/>
+  <circle cx="622" cy="204" r="14" fill="#F2C9A5"/>
+  <text x="552" y="298" fill="#4F6F55" font-family="Arial, sans-serif" font-size="20" font-weight="700">洗水果</text>
+  <path d="M198 122H312" stroke="#D7C8B7" stroke-width="12" stroke-linecap="round"/>
+  <path d="M214 146H296" stroke="#D7C8B7" stroke-width="12" stroke-linecap="round"/>
+  <path d="M230 170H280" stroke="#D7C8B7" stroke-width="12" stroke-linecap="round"/>
 </svg>

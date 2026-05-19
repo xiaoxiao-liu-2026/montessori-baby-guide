@@ -6,7 +6,7 @@ import { recommendedItems, skipItems, toyPrinciples } from "@/lib/content";
 import { MomCalmNote } from "@/components/MomCalmNote";
 
 export const metadata: Metadata = {
-  title: "玩具选择指南 | 宝宝成长，妈妈不慌"
+  title: "玩具怎么选 | 宝宝成长，妈妈不慌"
 };
 
 const toyStages = [
@@ -32,7 +32,7 @@ export default function ToyGuidePage() {
   return (
     <main>
       <PageHero
-        eyebrow="玩具选择指南"
+        eyebrow="玩具怎么选"
         title="玩具用品怎么选：先看懂孩子，再决定买什么"
         description="玩具不是越多越好，也不是越贵越科学。先看宝宝当前发展需求，再判断材料是否能让孩子主动操作、重复使用和真实参与。"
       />

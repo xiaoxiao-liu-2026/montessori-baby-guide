@@ -2,11 +2,11 @@ import Link from "next/link";
 
 const navItems = [
   { href: "/", label: "首页" },
-  { href: "/growth-calendar", label: "月龄指南" },
-  { href: "/toy-guide", label: "玩具选择" },
-  { href: "/home-montessori", label: "家庭蒙氏" },
-  { href: "/mom-faq", label: "妈妈问答" },
-  { href: "/about", label: "关于我们" }
+  { href: "/growth-calendar", label: "成长月历" },
+  { href: "/home-practice", label: "居家练习" },
+  { href: "/toy-guide", label: "玩具怎么选" },
+  { href: "/home-montessori", label: "蒙氏轻理解" },
+  { href: "/mom-faq", label: "妈妈不慌" }
 ];
 
 export function Header() {

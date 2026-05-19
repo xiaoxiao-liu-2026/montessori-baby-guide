@@ -1,6 +1,5 @@
 import {
   Baby,
-  BookOpen,
   Blocks,
   CalendarDays,
   HandHeart,
@@ -13,10 +12,13 @@ import {
 
 export const audiences = [
   "不知道宝宝这个月龄正在发展什么",
-  "玩具、早教、用品推荐太多，越看越乱",
+  "看了很多玩具、早教、用品推荐，越看越乱",
+  "买了一堆玩具，孩子却不怎么玩",
   "想科学育儿，但不知道每天在家怎么做",
   "听过蒙氏理念，但不知道怎么落地",
+  "孩子总想“自己来”，不知道该支持还是阻止",
   "想培养孩子独立性、动手能力和生活自理能力",
+  "看别人家孩子会得多，忍不住焦虑",
   "不想鸡娃，也不想完全放任",
   "希望有人用妈妈能听懂的话，把发展规律讲清楚"
 ];
@@ -34,24 +36,24 @@ export const columns = [
     description:
       "用家里常见物品，做适合宝宝阶段的动手、语言、感官、动作和生活自理练习。",
     icon: HandHeart,
-    href: "/growth-calendar/19-24-months"
+    href: "/home-practice"
   },
   {
-    title: "玩具用品怎么选",
+    title: "玩具怎么选",
     description:
       "帮妈妈判断这个阶段真正需要什么，哪些可以买，哪些不急着买，哪些可以用家里物品替代。",
     icon: Blocks,
     href: "/toy-guide"
   },
   {
-    title: "蒙氏理念轻理解",
+    title: "蒙氏轻理解",
     description:
       "用白话解释蒙氏理念：独立性、秩序感、生活练习、真实参与、自己来。",
     icon: Sparkles,
     href: "/home-montessori"
   },
   {
-    title: "妈妈不慌指南",
+    title: "妈妈不慌",
     description:
       "给妈妈低压力陪伴建议，减少焦虑、比较和自我责备。",
     icon: HelpCircle,
@@ -118,11 +120,11 @@ export const stages = [
 ];
 
 export const guideLinks = [
-  { title: "月龄发展指南", href: "/growth-calendar", icon: Baby },
-  { title: "玩具选择指南", href: "/toy-guide", icon: ListChecks },
-  { title: "家庭蒙氏环境", href: "/home-montessori", icon: Home },
-  { title: "妈妈常见问题", href: "/mom-faq", icon: Heart },
-  { title: "关于我们", href: "/about", icon: BookOpen }
+  { title: "成长月历", href: "/growth-calendar", icon: Baby },
+  { title: "居家练习", href: "/home-practice", icon: HandHeart },
+  { title: "玩具怎么选", href: "/toy-guide", icon: ListChecks },
+  { title: "蒙氏轻理解", href: "/home-montessori", icon: Home },
+  { title: "妈妈不慌", href: "/mom-faq", icon: Heart }
 ];
 
 export const toyPrinciples = [
@@ -166,8 +168,9 @@ export const homePracticeCards = [
 ];
 
 export const recommendedItems = [
-  "小抹布",
   "小水壶",
+  "小杯子",
+  "小抹布",
   "小篮子",
   "简单拼图",
   "大颗粒串珠",
@@ -177,9 +180,9 @@ export const recommendedItems = [
 
 export const skipItems = [
   "声光电玩具",
-  "功能太复杂的早教玩具",
-  "过度宣传开发智力的产品",
-  "需要妈妈全程操作的复杂教具"
+  "过度宣传开发智力的复杂玩具",
+  "孩子只能被动看的玩具",
+  "需要妈妈全程高强度操作的复杂教具"
 ];
 
 export const practicalCare = [
