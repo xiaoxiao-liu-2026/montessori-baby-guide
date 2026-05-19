@@ -138,12 +138,12 @@ export const toyPrinciples = [
 export const homePracticeCards = [
   {
     title: "倒水练习",
-    image: photos.sinkWork,
+    image: photos.kitchenPractice,
     text: "小水壶、小杯子和托盘就够了。水少一点，洒了也可以顺便练习擦一擦。"
   },
   {
     title: "擦桌子",
-    image: photos.hero,
+    image: photos.washingStrawberries,
     text: "准备小抹布和小喷壶，重点不是擦得多干净，而是参与真实生活。"
   },
   {
@@ -153,17 +153,17 @@ export const homePracticeCards = [
   },
   {
     title: "穿脱鞋袜",
-    image: "/images/practice-shoes.svg",
+    image: photos.shoes,
     text: "选容易穿脱的鞋袜，给孩子一点时间，动作慢也没关系。"
   },
   {
     title: "洗水果 / 洗菜",
-    image: photos.hero,
+    image: photos.washingFruit,
     text: "小盆、少量水果或蔬菜，配合防滑地面，让宝宝参与真实家务。"
   },
   {
     title: "分类配对",
-    image: photos.calmPlay,
+    image: photos.woodenPlay,
     text: "用家里的勺子、袜子、积木或小盒子做配对，不需要复杂教具。"
   }
 ];
@@ -198,14 +198,14 @@ export const practicalCare = [
 export const month19to24Activities = [
   {
     title: "倒水练习",
-    image: photos.sinkWork,
+    image: photos.kitchenPractice,
     prepare: "小水壶、小杯子、托盘、少量水",
     benefit: "练习手部控制、专注和独立性",
     reminder: "水少一点，洒了也可以顺便让孩子擦一擦。"
   },
   {
     title: "擦桌子",
-    image: photos.hero,
+    image: photos.washingStrawberries,
     prepare: "小抹布、小喷壶",
     benefit: "生活参与、手部控制、秩序感",
     reminder: "重点不是擦干净，而是让孩子参与真实生活。"
@@ -219,14 +219,14 @@ export const month19to24Activities = [
   },
   {
     title: "穿脱鞋袜",
-    image: "/images/practice-shoes.svg",
+    image: photos.shoes,
     prepare: "容易穿脱的鞋袜",
     benefit: "自理能力、身体协调、独立意识",
     reminder: "给孩子时间，不要急着替他完成。"
   },
   {
     title: "洗水果 / 洗菜",
-    image: photos.hero,
+    image: photos.washingFruit,
     prepare: "小盆、少量水果或蔬菜",
     benefit: "感官体验、真实生活参与",
     reminder: "水量少一点，地面防滑。"
