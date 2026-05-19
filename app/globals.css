@@ -20,6 +20,7 @@ body {
   background: #fbf7ef;
   color: #2f332f;
   font-family: var(--font-sans);
+  text-rendering: optimizeLegibility;
 }
 
 ::selection {
@@ -38,16 +39,12 @@ body {
 
 .soft-band {
   background:
-    linear-gradient(180deg, rgba(251, 247, 239, 0.92), rgba(251, 247, 239, 1)),
-    url("/images/home-routine.svg");
-  background-position: right 4% top 28px;
-  background-repeat: no-repeat;
-  background-size: min(45vw, 430px);
+    radial-gradient(circle at 84% 20%, rgba(242, 201, 165, 0.26), transparent 28%),
+    linear-gradient(180deg, rgba(251, 247, 239, 0.98), rgba(251, 247, 239, 1));
 }
 
 @media (max-width: 860px) {
-  .soft-band {
-    background-position: right -60px top 38px;
-    background-size: 300px;
+  .page-shell {
+    width: min(100% - 24px, 1120px);
   }
 }

@@ -1,0 +1,22 @@
+<svg width="720" height="560" viewBox="0 0 720 560" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="妈妈和宝宝在自然光家中互动">
+  <rect width="720" height="560" rx="36" fill="#FBF7EF"/>
+  <path d="M58 430C112 344 194 320 274 344C350 367 402 410 488 374C566 342 630 370 680 430V520H58V430Z" fill="#E7F0EC"/>
+  <rect x="82" y="78" width="166" height="220" rx="28" fill="#FFF8EC" stroke="#E2D3C0" stroke-width="8"/>
+  <path d="M122 198C142 168 186 162 211 190" stroke="#CFAE8E" stroke-width="12" stroke-linecap="round"/>
+  <circle cx="406" cy="164" r="72" fill="#F2C9A5"/>
+  <path d="M334 210C354 154 410 122 464 138C506 151 533 184 540 229C499 252 454 260 409 251C378 245 352 232 334 210Z" fill="#7F9B82"/>
+  <path d="M382 162C391 152 404 152 413 162" stroke="#2F332F" stroke-width="7" stroke-linecap="round"/>
+  <path d="M450 162C459 152 472 152 481 162" stroke="#2F332F" stroke-width="7" stroke-linecap="round"/>
+  <path d="M410 198C429 211 454 211 474 198" stroke="#2F332F" stroke-width="7" stroke-linecap="round"/>
+  <path d="M292 438C304 334 370 268 454 272C546 276 612 344 626 438H292Z" fill="#FFF8EC" stroke="#E2D3C0" stroke-width="8"/>
+  <circle cx="282" cy="332" r="46" fill="#F4D8BF"/>
+  <path d="M235 394C244 355 275 332 315 337C357 342 385 374 392 421H232C231 411 232 402 235 394Z" fill="#BFD2C4"/>
+  <path d="M265 327C275 316 292 316 303 327" stroke="#2F332F" stroke-width="6" stroke-linecap="round"/>
+  <rect x="116" y="394" width="96" height="70" rx="16" fill="#FFFFFF" stroke="#D7C8B7" stroke-width="8"/>
+  <path d="M140 429H188" stroke="#7F9B82" stroke-width="9" stroke-linecap="round"/>
+  <path d="M164 406V452" stroke="#7F9B82" stroke-width="9" stroke-linecap="round"/>
+  <rect x="538" y="362" width="72" height="58" rx="14" fill="#FFFFFF" stroke="#D7C8B7" stroke-width="8"/>
+  <circle cx="563" cy="392" r="8" fill="#7F9B82"/>
+  <circle cx="585" cy="392" r="8" fill="#F2C9A5"/>
+  <path d="M86 352H250" stroke="#D7C8B7" stroke-width="14" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,31 @@
+type VisualCardProps = {
+  image: string;
+  title: string;
+  description?: string;
+  imageAlt?: string;
+};
+
+export function VisualCard({
+  image,
+  title,
+  description,
+  imageAlt
+}: VisualCardProps) {
+  return (
+    <article className="overflow-hidden rounded-lg border border-oatmeal bg-white shadow-sm">
+      <div className="bg-[#F8EFE3] p-4">
+        <img
+          src={image}
+          alt={imageAlt ?? title}
+          className="mx-auto aspect-[4/3] w-full max-w-[260px] object-contain"
+        />
+      </div>
+      <div className="p-5">
+        <h3 className="text-lg font-semibold tracking-[0] text-ink">{title}</h3>
+        {description ? (
+          <p className="mt-3 text-sm leading-7 text-ink/70">{description}</p>
+        ) : null}
+      </div>
+    </article>
+  );
+}

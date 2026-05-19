@@ -1,7 +1,11 @@
 import type { Metadata } from "next";
+import Link from "next/link";
+import { ArrowRight } from "lucide-react";
 import { PageHero } from "@/components/PageHero";
 import { InfoCard } from "@/components/InfoCard";
 import { stages } from "@/lib/content";
+import { MomCalmNote } from "@/components/MomCalmNote";
+import { StageCard } from "@/components/StageCard";
 
 export const metadata: Metadata = {
   title: "月龄发展指南 | 宝宝成长，妈妈不慌"
@@ -16,13 +20,20 @@ export default function GrowthCalendarPage() {
         description="月龄发展不是考试表，而是一张帮助妈妈理解宝宝的地图。你可以按宝宝当前阶段查看重点，再选择家里容易做到的小练习。"
       />
       <section className="bg-cream py-14 md:py-20">
-        <div className="page-shell grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-          {stages.map((stage) => (
-            <InfoCard key={stage.age} title={stage.age}>
-              <p className="font-medium text-ink">{stage.focus}</p>
-              <p className="mt-3">{stage.practice}</p>
-            </InfoCard>
-          ))}
+        <div className="page-shell">
+          <MomCalmNote />
+          <div className="mt-8 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+            {stages.map((stage) => (
+              <StageCard
+                key={stage.age}
+                age={stage.age}
+                focus={stage.focus}
+                practice={stage.practice}
+                image={stage.image}
+                href={stage.href}
+              />
+            ))}
+          </div>
         </div>
       </section>
       <section className="bg-[#F7F0E4] py-14">
@@ -36,6 +47,26 @@ export default function GrowthCalendarPage() {
           <InfoCard title="什么时候求助" tone="white">
             如果出现明显倒退、长期没有回应、喂养睡眠严重困难，或者妈妈强烈担心，请咨询儿保医生。
           </InfoCard>
+        </div>
+      </section>
+      <section className="bg-cream py-12">
+        <div className="page-shell flex flex-col gap-4 rounded-lg border border-oatmeal bg-white p-6 md:flex-row md:items-center md:justify-between">
+          <div>
+            <p className="text-sm font-medium text-sageDark">示例内容</p>
+            <h2 className="mt-2 text-2xl font-semibold tracking-[0] text-ink">
+              先看看19-24个月怎么写
+            </h2>
+            <p className="mt-3 text-sm leading-7 text-ink/70">
+              这一页包含发展重点、常见行为、居家活动、玩具建议和妈妈提示。
+            </p>
+          </div>
+          <Link
+            href="/growth-calendar/19-24-months"
+            className="inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-sageDark px-6 py-3 text-sm font-medium text-white transition hover:bg-sage"
+          >
+            查看19-24个月
+            <ArrowRight size={18} />
+          </Link>
         </div>
       </section>
     </main>
