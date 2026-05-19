@@ -19,20 +19,22 @@ export default function HomePage() {
   return (
     <main>
       <section className="soft-band border-b border-oatmeal">
-        <div className="page-shell grid gap-9 py-10 md:min-h-[560px] md:grid-cols-[0.95fr_1.05fr] md:items-center md:py-16">
-          <div>
-            <p className="text-sm font-medium text-sageDark">
-              0-3岁科学育儿与蒙氏启蒙指南
+        <div className="page-shell grid gap-10 py-10 md:min-h-[640px] md:grid-cols-[0.9fr_1.1fr] md:items-center md:py-18 lg:gap-14">
+          <div className="max-w-2xl">
+            <p className="text-sm font-medium tracking-[0.08em] text-sageDark">
+              0-3岁成长指南 / 居家蒙氏 / 低压力陪伴
             </p>
-            <h1 className="mt-5 text-4xl font-semibold leading-tight tracking-[0] text-ink md:text-6xl">
+            <h1 className="mt-6 text-4xl font-semibold leading-[1.05] tracking-[0] text-ink md:text-6xl lg:text-7xl">
               宝宝成长，
               <br />
               妈妈不慌
             </h1>
-            <p className="mt-6 max-w-2xl text-lg leading-9 text-ink/76">
-              看懂0-3岁宝宝每个阶段真正需要什么。从发展规律、居家练习到玩具选择，帮妈妈少焦虑一点。
+            <p className="mt-7 max-w-xl text-lg leading-9 text-ink/78 md:text-xl">
+              看懂 0-3 岁宝宝每个阶段真正需要什么。
+              <br className="hidden sm:block" />
+              从发展规律、居家练习到玩具选择，帮妈妈少焦虑一点。
             </p>
-            <p className="mt-4 max-w-2xl rounded-lg border border-[#EED1B7] bg-[#FFF5E8] px-4 py-3 text-base leading-8 text-ink/76">
+            <p className="mt-6 border-l-4 border-[#9A7A55] pl-4 text-base font-medium leading-8 text-ink/82">
               先看懂孩子，再决定怎么陪、怎么买、怎么教。
             </p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
@@ -40,7 +42,7 @@ export default function HomePage() {
                 href="/growth-calendar"
                 className="inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-sageDark px-6 py-3 text-sm font-medium text-white shadow-soft transition hover:bg-sage"
               >
-                查看0-3岁成长月历
+                查看 0-3 岁成长月历
                 <ArrowRight size={18} />
               </Link>
               <Link
@@ -58,12 +60,14 @@ export default function HomePage() {
             <img
               src={photos.hero}
               alt="孩子在厨房参与洗水果，妈妈在旁边陪伴的真实家庭场景"
-              className="aspect-[5/4] w-full rounded-[18px] border border-[#D8D0C4] object-cover shadow-soft"
+              className="aspect-[4/5] w-full rounded-[20px] border border-[#D8D0C4] object-cover shadow-soft md:aspect-[5/4] lg:aspect-[4/5]"
             />
-            <div className="absolute bottom-4 left-4 right-4 rounded-lg border border-white/70 bg-white/88 p-4 backdrop-blur">
-              <p className="text-sm font-semibold text-sageDark">真实生活也能是练习</p>
-              <p className="mt-1 text-sm leading-6 text-ink/70">
-                洗水果、倒水、收纳、擦桌，孩子是在真实生活里长出能力。
+            <div className="absolute -bottom-5 left-5 max-w-[86%] rounded-md border border-[#D8D0C4] bg-[#F7F4EE]/95 px-5 py-4 shadow-soft backdrop-blur">
+              <p className="text-sm font-semibold text-sageDark">
+                真实生活里的练习
+              </p>
+              <p className="mt-1 text-sm leading-6 text-ink/72">
+                洗水果、倒水、收纳、擦桌，孩子是在日常里长出能力。
               </p>
             </div>
           </div>
