@@ -13,6 +13,7 @@ import { SectionHeader } from "@/components/SectionHeader";
 import { StageCard } from "@/components/StageCard";
 import { VisualCard } from "@/components/VisualCard";
 import { MomCalmNote } from "@/components/MomCalmNote";
+import { photos } from "@/lib/photos";
 
 export default function HomePage() {
   return (
@@ -28,11 +29,11 @@ export default function HomePage() {
               <br />
               妈妈不慌
             </h1>
-            <p className="mt-6 max-w-2xl text-lg leading-9 text-ink/74">
-              按0-3岁宝宝发展阶段，整理成长规律、居家练习、玩具用品选择和低压力陪伴方法，帮妈妈看懂孩子每个阶段真正需要什么。
+            <p className="mt-6 max-w-2xl text-lg leading-9 text-ink/76">
+              看懂0-3岁宝宝每个阶段真正需要什么。从发展规律、居家练习到玩具选择，帮妈妈少焦虑一点。
             </p>
             <p className="mt-4 max-w-2xl rounded-lg border border-[#EED1B7] bg-[#FFF5E8] px-4 py-3 text-base leading-8 text-ink/76">
-              不知道这个月龄该陪什么、买什么、练什么？先看懂孩子，再决定怎么陪、怎么买、怎么教。
+              先看懂孩子，再决定怎么陪、怎么买、怎么教。
             </p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
               <Link
@@ -55,14 +56,14 @@ export default function HomePage() {
           </div>
           <div className="relative">
             <img
-              src="/images/hero-home-life.svg"
-              alt="妈妈和宝宝在家中自然互动的温柔场景"
-              className="w-full rounded-[18px] border border-oatmeal bg-white shadow-soft"
+              src={photos.hero}
+              alt="孩子在厨房参与洗水果，妈妈在旁边陪伴的真实家庭场景"
+              className="aspect-[5/4] w-full rounded-[18px] border border-[#D8D0C4] object-cover shadow-soft"
             />
-            <div className="absolute bottom-4 left-4 right-4 rounded-lg border border-white/70 bg-white/86 p-4 backdrop-blur">
+            <div className="absolute bottom-4 left-4 right-4 rounded-lg border border-white/70 bg-white/88 p-4 backdrop-blur">
               <p className="text-sm font-semibold text-sageDark">真实生活也能是练习</p>
               <p className="mt-1 text-sm leading-6 text-ink/70">
-                倒水、擦桌、收纳、洗水果，普通家庭每天都能自然发生。
+                洗水果、倒水、收纳、擦桌，孩子是在真实生活里长出能力。
               </p>
             </div>
           </div>
@@ -301,9 +302,9 @@ export default function HomePage() {
             </Link>
           </div>
           <img
-            src="/images/mom-calm.svg"
-            alt="妈妈低压力陪伴宝宝的温柔插画"
-            className="mx-auto w-full max-w-sm"
+            src={photos.calmPlay}
+            alt="孩子在有秩序的家庭环境中安静探索"
+            className="mx-auto aspect-[4/3] w-full max-w-sm rounded-lg border border-oatmeal object-cover shadow-sm"
           />
         </div>
       </section>

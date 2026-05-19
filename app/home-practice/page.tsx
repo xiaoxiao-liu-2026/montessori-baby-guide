@@ -5,6 +5,7 @@ import { PageHero } from "@/components/PageHero";
 import { VisualCard } from "@/components/VisualCard";
 import { MomCalmNote } from "@/components/MomCalmNote";
 import { homePracticeCards } from "@/lib/content";
+import { photos } from "@/lib/photos";
 
 export const metadata: Metadata = {
   title: "居家练习 | 宝宝成长，妈妈不慌",
@@ -30,9 +31,9 @@ export default function HomePracticePage() {
       <section className="bg-cream py-14 md:py-20">
         <div className="page-shell grid gap-8 md:grid-cols-[0.85fr_1.15fr] md:items-center">
           <img
-            src="/images/hero-home-life.svg"
+            src={photos.hero}
             alt="宝宝参与倒水、擦桌和收纳的居家练习场景"
-            className="w-full rounded-lg border border-oatmeal bg-white shadow-sm"
+            className="aspect-[4/3] w-full rounded-lg border border-oatmeal bg-white object-cover shadow-sm"
           />
           <div>
             <h2 className="text-2xl font-semibold tracking-[0] text-ink">

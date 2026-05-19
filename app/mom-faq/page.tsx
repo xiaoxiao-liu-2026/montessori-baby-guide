@@ -5,6 +5,7 @@ import { PageHero } from "@/components/PageHero";
 import { InfoCard } from "@/components/InfoCard";
 import { faqs } from "@/lib/content";
 import { MomCalmNote } from "@/components/MomCalmNote";
+import { photos } from "@/lib/photos";
 
 export const metadata: Metadata = {
   title: "妈妈不慌 | 宝宝成长，妈妈不慌"
@@ -46,9 +47,9 @@ export default function MomFaqPage() {
             </div>
           </div>
           <img
-            src="/images/mom-calm.svg"
+            src={photos.calmPlay}
             alt="妈妈低压力陪伴孩子的居家插图"
-            className="mx-auto w-full max-w-md"
+            className="mx-auto aspect-[4/3] w-full max-w-md rounded-lg border border-oatmeal object-cover shadow-sm"
           />
         </div>
       </section>

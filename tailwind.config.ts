@@ -9,13 +9,13 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        cream: "#FBF7EF",
-        oatmeal: "#F2E8D8",
-        sage: "#7F9B82",
-        sageDark: "#4F6F55",
+        cream: "#F7F4EE",
+        oatmeal: "#E5DED2",
+        sage: "#75866D",
+        sageDark: "#3F5F48",
         apricot: "#F2C9A5",
-        mist: "#E7F0EC",
-        ink: "#2F332F"
+        mist: "#E5ECE5",
+        ink: "#2B302B"
       },
       fontFamily: {
         sans: [

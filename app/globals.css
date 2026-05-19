@@ -17,7 +17,7 @@ html {
 
 body {
   margin: 0;
-  background: #fbf7ef;
+  background: #F7F4EE;
   color: #2f332f;
   font-family: var(--font-sans);
   text-rendering: optimizeLegibility;
@@ -39,8 +39,8 @@ body {
 
 .soft-band {
   background:
-    radial-gradient(circle at 84% 20%, rgba(242, 201, 165, 0.26), transparent 28%),
-    linear-gradient(180deg, rgba(251, 247, 239, 0.98), rgba(251, 247, 239, 1));
+    radial-gradient(circle at 84% 20%, rgba(120, 137, 109, 0.12), transparent 28%),
+    linear-gradient(180deg, rgba(247, 244, 238, 0.98), rgba(247, 244, 238, 1));
 }
 
 @media (max-width: 860px) {

@@ -9,6 +9,7 @@ import {
   recommendedItems,
   skipItems
 } from "@/lib/content";
+import { photos } from "@/lib/photos";
 
 export const metadata: Metadata = {
   title: "19-24个月发展指南 | 宝宝成长，妈妈不慌",
@@ -61,9 +62,9 @@ export default function Month19To24Page() {
             </p>
           </div>
           <img
-            src="/images/stage-19-24.svg"
-            alt="19-24个月宝宝参与生活练习的插图"
-            className="mx-auto w-full max-w-sm rounded-lg border border-oatmeal bg-white p-4 shadow-sm"
+            src={photos.sinkWork}
+            alt="19-24个月孩子参与真实生活练习的家庭照片"
+            className="mx-auto aspect-[4/3] w-full max-w-sm rounded-lg border border-oatmeal bg-white object-cover shadow-sm"
           />
         </div>
       </section>
@@ -107,7 +108,11 @@ export default function Month19To24Page() {
                 <img
                   src={activity.image}
                   alt={`${activity.title}练习插图`}
-                  className="w-full bg-[#F8EFE3] p-5"
+                  className={
+                    activity.image.startsWith("http")
+                      ? "aspect-[4/3] w-full object-cover"
+                      : "w-full bg-[#F8EFE3] p-5"
+                  }
                 />
                 <div className="p-5">
                   <h3 className="text-xl font-semibold tracking-[0] text-ink">

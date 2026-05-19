@@ -5,6 +5,7 @@ import { InfoCard } from "@/components/InfoCard";
 import { homePracticeCards, montessoriHomeTips } from "@/lib/content";
 import { MomCalmNote } from "@/components/MomCalmNote";
 import { VisualCard } from "@/components/VisualCard";
+import { photos } from "@/lib/photos";
 
 export const metadata: Metadata = {
   title: "家庭蒙氏环境 | 宝宝成长，妈妈不慌"
@@ -52,9 +53,9 @@ export default function HomeMontessoriPage() {
             </p>
           </div>
           <img
-            src="/images/hero-home-life.svg"
+            src={photos.woodenPlay}
             alt="温柔的家庭蒙氏生活环境插图"
-            className="mx-auto w-full max-w-md rounded-lg border border-oatmeal bg-white shadow-sm"
+            className="mx-auto aspect-[4/3] w-full max-w-md rounded-lg border border-oatmeal bg-white object-cover shadow-sm"
           />
         </div>
       </section>

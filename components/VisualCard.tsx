@@ -11,13 +11,19 @@ export function VisualCard({
   description,
   imageAlt
 }: VisualCardProps) {
+  const isPhoto = image.startsWith("http");
+
   return (
     <article className="overflow-hidden rounded-lg border border-oatmeal bg-white shadow-sm">
-      <div className="bg-[#F8EFE3] p-4">
+      <div className={isPhoto ? "bg-[#E8E2D8]" : "bg-[#F8EFE3] p-4"}>
         <img
           src={image}
           alt={imageAlt ?? title}
-          className="mx-auto aspect-[4/3] w-full max-w-[260px] object-contain"
+          className={
+            isPhoto
+              ? "aspect-[4/3] w-full object-cover"
+              : "mx-auto aspect-[4/3] w-full max-w-[260px] object-contain"
+          }
         />
       </div>
       <div className="p-5">
