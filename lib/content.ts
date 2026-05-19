@@ -138,17 +138,17 @@ export const toyPrinciples = [
 export const homePracticeCards = [
   {
     title: "倒水练习",
-    image: photos.kitchenPractice,
+    image: photos.pouring,
     text: "小水壶、小杯子和托盘就够了。水少一点，洒了也可以顺便练习擦一擦。"
   },
   {
     title: "擦桌子",
-    image: photos.washingStrawberries,
+    image: photos.wiping,
     text: "准备小抹布和小喷壶，重点不是擦得多干净，而是参与真实生活。"
   },
   {
     title: "收纳玩具",
-    image: photos.woodenPlay,
+    image: photos.tidying,
     text: "固定篮子或收纳盒，从一类玩具开始，帮助宝宝建立物品归位的秩序。"
   },
   {
@@ -158,13 +158,13 @@ export const homePracticeCards = [
   },
   {
     title: "洗水果 / 洗菜",
-    image: photos.washingFruit,
+    image: photos.washingFruitPrepared,
     text: "小盆、少量水果或蔬菜，配合防滑地面，让宝宝参与真实家务。"
   },
   {
-    title: "分类配对",
-    image: photos.woodenPlay,
-    text: "用家里的勺子、袜子、积木或小盒子做配对，不需要复杂教具。"
+    title: "舀豆子 / 转移工作",
+    image: photos.spooning,
+    text: "用小勺、两个小碗和托盘练习转移，支持手部控制、专注和秩序感。"
   }
 ];
 
@@ -198,21 +198,21 @@ export const practicalCare = [
 export const month19to24Activities = [
   {
     title: "倒水练习",
-    image: photos.kitchenPractice,
+    image: photos.pouring,
     prepare: "小水壶、小杯子、托盘、少量水",
     benefit: "练习手部控制、专注和独立性",
     reminder: "水少一点，洒了也可以顺便让孩子擦一擦。"
   },
   {
     title: "擦桌子",
-    image: photos.washingStrawberries,
+    image: photos.wiping,
     prepare: "小抹布、小喷壶",
     benefit: "生活参与、手部控制、秩序感",
     reminder: "重点不是擦干净，而是让孩子参与真实生活。"
   },
   {
     title: "收纳玩具",
-    image: photos.woodenPlay,
+    image: photos.tidying,
     prepare: "固定篮子或收纳盒",
     benefit: "秩序感、分类、生活习惯",
     reminder: "先从一个篮子开始，不要要求一次收完所有。"
@@ -226,7 +226,7 @@ export const month19to24Activities = [
   },
   {
     title: "洗水果 / 洗菜",
-    image: photos.washingFruit,
+    image: photos.washingFruitPrepared,
     prepare: "小盆、少量水果或蔬菜",
     benefit: "感官体验、真实生活参与",
     reminder: "水量少一点，地面防滑。"

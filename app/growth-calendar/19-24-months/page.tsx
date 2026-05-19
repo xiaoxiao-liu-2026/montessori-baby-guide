@@ -62,7 +62,7 @@ export default function Month19To24Page() {
             </p>
           </div>
           <img
-            src={photos.kitchenPractice}
+            src={photos.pouring}
             alt="19-24个月孩子参与真实生活练习的家庭照片"
             className="mx-auto aspect-[4/3] w-full max-w-sm rounded-lg border border-oatmeal bg-white object-cover shadow-sm"
           />

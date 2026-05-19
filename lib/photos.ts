@@ -1,6 +1,10 @@
 export const photos = {
-  hero:
-    "https://images.pexels.com/photos/5082207/pexels-photo-5082207.jpeg?auto=compress&cs=tinysrgb&w=1400",
+  hero: "/images/montessori-hero-pouring.png",
+  pouring: "/images/montessori-hero-pouring.png",
+  wiping: "/images/practice-wiping-photo.png",
+  washingFruitPrepared: "/images/practice-washing-fruit-photo.png",
+  tidying: "/images/practice-tidying-photo.png",
+  spooning: "/images/practice-spooning-photo.png",
   washingFruit:
     "https://images.pexels.com/photos/5082207/pexels-photo-5082207.jpeg?auto=compress&cs=tinysrgb&w=1200",
   washingStrawberries:
@@ -32,11 +36,9 @@ export const stagePhotos = {
   months13to15:
     "https://images.pexels.com/photos/459976/pexels-photo-459976.jpeg?auto=compress&cs=tinysrgb&w=900",
   months16to18:
-    "https://images.pexels.com/photos/5083230/pexels-photo-5083230.jpeg?auto=compress&cs=tinysrgb&w=900",
-  months19to24:
-    "https://images.pexels.com/photos/5082207/pexels-photo-5082207.jpeg?auto=compress&cs=tinysrgb&w=900",
-  months25to30:
-    "https://images.pexels.com/photos/8504337/pexels-photo-8504337.jpeg?auto=compress&cs=tinysrgb&w=900",
+    "/images/practice-tidying-photo.png",
+  months19to24: "/images/montessori-hero-pouring.png",
+  months25to30: "/images/practice-spooning-photo.png",
   months31to36:
     "https://images.pexels.com/photos/3890903/pexels-photo-3890903.jpeg?auto=compress&cs=tinysrgb&w=900"
 };

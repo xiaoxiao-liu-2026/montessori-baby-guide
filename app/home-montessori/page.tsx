@@ -53,7 +53,7 @@ export default function HomeMontessoriPage() {
             </p>
           </div>
           <img
-            src={photos.woodenPlay}
+            src={photos.tidying}
             alt="温柔的家庭蒙氏生活环境插图"
             className="mx-auto aspect-[4/3] w-full max-w-md rounded-lg border border-oatmeal bg-white object-cover shadow-sm"
           />
