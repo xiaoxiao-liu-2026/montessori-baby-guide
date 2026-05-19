@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Home, Leaf, Repeat, Shelves } from "lucide-react";
+import { Home, Leaf, Library, Repeat } from "lucide-react";
 import { PageHero } from "@/components/PageHero";
 import { InfoCard } from "@/components/InfoCard";
 import { montessoriHomeTips } from "@/lib/content";
@@ -16,7 +16,7 @@ const areas = [
   },
   {
     title: "玩具区",
-    icon: Shelves,
+    icon: Library,
     text: "用开放架或收纳篮，少量摆放，固定位置。孩子更容易看见选择，也更容易收回去。"
   },
   {
