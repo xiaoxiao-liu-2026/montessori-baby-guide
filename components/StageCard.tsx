@@ -13,9 +13,11 @@ export function StageCard({ age, focus, practice, image, href }: StageCardProps)
   const body = (
     <>
       <div className="flex gap-4">
-        <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-mist text-sm font-semibold text-sageDark">
-          {age.split("个月")[0]}
-        </div>
+        <img
+          src={image}
+          alt={`${age}可能的发展场景`}
+          className="h-24 w-24 shrink-0 rounded-lg bg-[#E8E2D8] object-cover"
+        />
         <div>
           <p className="text-sm font-semibold text-sageDark">{age}</p>
           <h3 className="mt-2 text-lg font-semibold leading-7 tracking-[0] text-ink">

@@ -9,7 +9,7 @@ import {
   ListChecks,
   Sparkles
 } from "lucide-react";
-import { photos } from "@/lib/photos";
+import { photos, stagePhotos } from "@/lib/photos";
 
 export const audiences = [
   "不知道宝宝这个月龄正在发展什么",
@@ -67,56 +67,56 @@ export const stages = [
     age: "0-3个月",
     focus: "安全感、感官适应、亲密回应",
     practice: "多抱、多回应，给宝宝稳定的声音、气味和节奏。",
-    image: "/images/stage-0-3.svg"
+    image: stagePhotos.months0to3
   },
   {
     age: "4-6个月",
     focus: "翻身、抓握、视觉追踪、身体控制",
     practice: "增加趴玩时间，用柔软布书、摇铃和镜子支持观察与伸手。",
-    image: "/images/stage-4-6.svg"
+    image: stagePhotos.months4to6
   },
   {
     age: "7-9个月",
     focus: "爬行、手部探索、空间探索",
     practice: "准备安全地垫和低矮物品，让宝宝有机会移动、够取、转身。",
-    image: "/images/stage-7-9.svg"
+    image: stagePhotos.months7to9
   },
   {
     age: "10-12个月",
     focus: "扶站、模仿、简单互动、移动探索",
     practice: "给稳定家具扶站，陪宝宝玩递给我、放进去、拿出来。",
-    image: "/images/stage-10-12.svg"
+    image: stagePhotos.months10to12
   },
   {
     age: "13-15个月",
     focus: "行走、语言萌芽、生活参与",
     practice: "让宝宝参与擦桌子、递物品、收玩具，用真实词语描述生活。",
-    image: "/images/stage-13-18.svg"
+    image: stagePhotos.months13to15
   },
   {
     age: "16-18个月",
     focus: "动手兴趣、流程模仿、初步自理",
     practice: "练习舀、倒、开合、分类，给宝宝慢慢尝试的时间。",
-    image: "/images/stage-13-18.svg"
+    image: stagePhotos.months16to18
   },
   {
     age: "19-24个月",
     focus: "秩序感、独立意识、情绪表达、生活练习",
     practice: "固定物品位置，建立简单流程，允许宝宝在安全范围内选择。",
-    image: "/images/stage-19-24.svg",
+    image: stagePhotos.months19to24,
     href: "/growth-calendar/19-24-months"
   },
   {
     age: "25-30个月",
     focus: "语言扩展、分类配对、规则理解、精细动作",
     practice: "做配对、串珠、倒水、洗水果，规则少而清楚。",
-    image: "/images/stage-25-30.svg"
+    image: stagePhotos.months25to30
   },
   {
     age: "31-36个月",
     focus: "社交萌芽、合作意识、自我照顾、复杂任务",
     practice: "让孩子完成更长流程，如洗手、穿鞋、收拾小区域。",
-    image: "/images/stage-31-36.svg"
+    image: stagePhotos.months31to36
   }
 ];
 

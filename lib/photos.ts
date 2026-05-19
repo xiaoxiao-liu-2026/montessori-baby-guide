@@ -19,6 +19,27 @@ export const photos = {
     "https://images.pexels.com/photos/15243508/pexels-photo-15243508.jpeg?auto=compress&cs=tinysrgb&w=1200"
 };
 
+export const stagePhotos = {
+  months0to3:
+    "https://images.pexels.com/photos/34336729/pexels-photo-34336729.jpeg?auto=compress&cs=tinysrgb&w=900",
+  months4to6:
+    "https://images.pexels.com/photos/29857302/pexels-photo-29857302.jpeg?auto=compress&cs=tinysrgb&w=900",
+  months7to9:
+    "https://images.pexels.com/photos/29857302/pexels-photo-29857302.jpeg?auto=compress&cs=tinysrgb&w=900",
+  months10to12:
+    "https://images.pexels.com/photos/30591140/pexels-photo-30591140.jpeg?auto=compress&cs=tinysrgb&w=900",
+  months13to15:
+    "https://images.pexels.com/photos/459976/pexels-photo-459976.jpeg?auto=compress&cs=tinysrgb&w=900",
+  months16to18:
+    "https://images.pexels.com/photos/5083230/pexels-photo-5083230.jpeg?auto=compress&cs=tinysrgb&w=900",
+  months19to24:
+    "https://images.pexels.com/photos/5082207/pexels-photo-5082207.jpeg?auto=compress&cs=tinysrgb&w=900",
+  months25to30:
+    "https://images.pexels.com/photos/8504337/pexels-photo-8504337.jpeg?auto=compress&cs=tinysrgb&w=900",
+  months31to36:
+    "https://images.pexels.com/photos/3890903/pexels-photo-3890903.jpeg?auto=compress&cs=tinysrgb&w=900"
+};
+
 export const photoSources = [
   {
     label: "洗水果 / 首屏主图",
@@ -47,6 +68,18 @@ export const photoSources = [
   {
     label: "有秩序的儿童空间",
     url: "https://www.pexels.com/photo/mirror-and-a-small-wicker-basket-lying-on-a-wooden-shelf-15243508/"
+  },
+  {
+    label: "0-3个月：妈妈抱着新生儿回应",
+    url: "https://www.pexels.com/photo/mother-holding-newborn-baby-in-sunlit-room-34336729/"
+  },
+  {
+    label: "7-9个月：宝宝爬行探索",
+    url: "https://www.pexels.com/photo/adorable-baby-crawling-on-bed-in-cozy-room-29857302/"
+  },
+  {
+    label: "10-12个月：宝宝扶站探索",
+    url: "https://www.pexels.com/photo/adorable-baby-standing-by-wooden-chair-indoors-30591140/"
   }
 ];
 };
