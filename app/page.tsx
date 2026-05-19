@@ -191,9 +191,9 @@ export default function HomePage() {
           <div className="mt-8 grid gap-5 md:grid-cols-2">
             <article className="overflow-hidden rounded-lg border border-[#D4E2D5] bg-white shadow-sm">
               <img
-                src="/images/toy-recommend.svg"
+                src="/images/toy-recommend-photo.png"
                 alt="更推荐的生活练习材料"
-                className="w-full bg-mist p-5"
+                className="aspect-[16/9] w-full bg-mist object-cover"
               />
               <div className="p-6">
                 <p className="text-sm font-medium text-sageDark">更推荐</p>
@@ -208,9 +208,9 @@ export default function HomePage() {
             </article>
             <article className="overflow-hidden rounded-lg border border-[#EED1B7] bg-white shadow-sm">
               <img
-                src="/images/toy-skip.svg"
+                src="/images/toy-skip-photo.png"
                 alt="不急着买的复杂玩具"
-                className="w-full bg-[#FFF5E8] p-5"
+                className="aspect-[16/9] w-full bg-[#FFF5E8] object-cover"
               />
               <div className="p-6">
                 <p className="text-sm font-medium text-[#9A6844]">不急着买</p>
