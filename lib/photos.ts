@@ -11,6 +11,7 @@ export const photos = {
     "https://images.pexels.com/photos/8504337/pexels-photo-8504337.jpeg?auto=compress&cs=tinysrgb&w=1200",
   calmPlay:
     "https://images.pexels.com/photos/5083230/pexels-photo-5083230.jpeg?auto=compress&cs=tinysrgb&w=1200",
+  momCalm: "/images/mom-calm-photo.png",
   shoes:
     "https://images.pexels.com/photos/5094102/pexels-photo-5094102.jpeg?auto=compress&cs=tinysrgb&w=1200",
   reading:

@@ -306,7 +306,7 @@ export default function HomePage() {
             </Link>
           </div>
           <img
-            src={photos.calmPlay}
+            src={photos.momCalm}
             alt="孩子在有秩序的家庭环境中安静探索"
             className="mx-auto aspect-[4/3] w-full max-w-sm rounded-lg border border-oatmeal object-cover shadow-sm"
           />

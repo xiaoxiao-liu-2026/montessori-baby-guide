@@ -47,7 +47,7 @@ export default function MomFaqPage() {
             </div>
           </div>
           <img
-            src={photos.calmPlay}
+            src={photos.momCalm}
             alt="妈妈低压力陪伴孩子的居家插图"
             className="mx-auto aspect-[4/3] w-full max-w-md rounded-lg border border-oatmeal object-cover shadow-sm"
           />
