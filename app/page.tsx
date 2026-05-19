@@ -14,6 +14,7 @@ import { StageCard } from "@/components/StageCard";
 import { VisualCard } from "@/components/VisualCard";
 import { MomCalmNote } from "@/components/MomCalmNote";
 import { photos } from "@/lib/photos";
+import { GrowthTrendMap } from "@/components/GrowthTrendMap";
 
 export default function HomePage() {
   return (
@@ -108,6 +109,8 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      <GrowthTrendMap />
 
       <section className="bg-cream py-14 md:py-20">
         <div className="page-shell">

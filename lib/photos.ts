@@ -85,4 +85,3 @@ export const photoSources = [
     url: "https://www.pexels.com/photo/adorable-baby-standing-by-wooden-chair-indoors-30591140/"
   }
 ];
-};
