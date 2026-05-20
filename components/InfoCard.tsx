@@ -9,7 +9,7 @@ type InfoCardProps = {
 const toneClass = {
   white: "border-oatmeal bg-white",
   green: "border-[#D4E2D5] bg-mist",
-  apricot: "border-[#EED1B7] bg-[#FFF4E9]"
+  apricot: "border-[#E8D3B7] bg-[#F7F2EA]"
 };
 
 export function InfoCard({ title, children, tone = "white" }: InfoCardProps) {

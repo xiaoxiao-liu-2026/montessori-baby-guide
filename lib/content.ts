@@ -2,6 +2,7 @@ import {
   Baby,
   Blocks,
   CalendarDays,
+  FileText,
   HandHeart,
   Heart,
   HelpCircle,
@@ -59,6 +60,13 @@ export const columns = [
       "给妈妈低压力陪伴建议，减少焦虑、比较和自我责备。",
     icon: HelpCircle,
     href: "/mom-faq"
+  },
+  {
+    title: "资料下载",
+    description:
+      "整理成长月历简表、居家练习清单和玩具选择判断表，方便妈妈保存和打印。",
+    icon: FileText,
+    href: "/downloads"
   }
 ];
 
@@ -158,7 +166,7 @@ export const homePracticeCards = [
   },
   {
     title: "洗水果 / 洗菜",
-    image: photos.washingFruitPrepared,
+    image: photos.washingStrawberries,
     text: "小盆、少量水果或蔬菜，配合防滑地面，让宝宝参与真实家务。"
   },
   {

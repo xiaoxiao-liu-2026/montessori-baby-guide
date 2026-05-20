@@ -9,13 +9,15 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        cream: "#F7F4EE",
-        oatmeal: "#E5DED2",
-        sage: "#75866D",
-        sageDark: "#3F5F48",
-        apricot: "#F2C9A5",
-        mist: "#E5ECE5",
-        ink: "#2B302B"
+        cream: "#FAF9F5",
+        oatmeal: "#E3DED5",
+        sage: "#6F806D",
+        sageDark: "#315B43",
+        olive: "#263F31",
+        apricot: "#DDBE96",
+        mist: "#E8F0E9",
+        stone: "#F1EFEA",
+        ink: "#252A27"
       },
       fontFamily: {
         sans: [
@@ -23,6 +25,12 @@ const config: Config = {
           "ui-sans-serif",
           "system-ui",
           "sans-serif"
+        ],
+        serif: [
+          "var(--font-serif)",
+          "ui-serif",
+          "Georgia",
+          "serif"
         ]
       },
       boxShadow: {

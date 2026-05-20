@@ -1,5 +1,5 @@
 export const photos = {
-  hero: "/images/montessori-hero-pouring.png",
+  hero: "/images/practice-washing-fruit-photo.png",
   pouring: "/images/montessori-hero-pouring.png",
   wiping: "/images/practice-wiping-photo.png",
   washingFruitPrepared: "/images/practice-washing-fruit-photo.png",
@@ -30,7 +30,7 @@ export const stagePhotos = {
   months4to6:
     "https://images.pexels.com/photos/29857302/pexels-photo-29857302.jpeg?auto=compress&cs=tinysrgb&w=900",
   months7to9:
-    "https://images.pexels.com/photos/29857302/pexels-photo-29857302.jpeg?auto=compress&cs=tinysrgb&w=900",
+    "https://images.pexels.com/photos/8504337/pexels-photo-8504337.jpeg?auto=compress&cs=tinysrgb&w=900",
   months10to12:
     "https://images.pexels.com/photos/30591140/pexels-photo-30591140.jpeg?auto=compress&cs=tinysrgb&w=900",
   months13to15:
@@ -41,6 +41,17 @@ export const stagePhotos = {
   months25to30: "/images/practice-spooning-photo.png",
   months31to36:
     "https://images.pexels.com/photos/3890903/pexels-photo-3890903.jpeg?auto=compress&cs=tinysrgb&w=900"
+};
+
+export const homeModulePhotos = {
+  hero: photos.hero,
+  trend: stagePhotos.months19to24,
+  practiceIntro: photos.wiping,
+  toyGuide: "/images/toy-recommend-photo.png",
+  calm: photos.momCalm,
+  downloads: photos.orderedHome,
+  about: photos.calmPlay,
+  contact: photos.reading
 };
 
 export const photoSources = [

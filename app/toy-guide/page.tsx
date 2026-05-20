@@ -76,7 +76,7 @@ export default function ToyGuidePage() {
           </InfoCard>
         </div>
       </section>
-      <section className="bg-[#F7F0E4] py-14 md:py-20">
+      <section className="bg-stone py-14 md:py-20">
         <div className="page-shell">
           <div className="grid gap-5 md:grid-cols-2">
             <article className="overflow-hidden rounded-lg border border-[#D4E2D5] bg-white shadow-sm">
@@ -103,7 +103,7 @@ export default function ToyGuidePage() {
               <img
                 src="/images/toy-skip-photo.png"
                 alt="不急着买的复杂声光电玩具插图"
-                className="aspect-[16/9] w-full bg-[#FFF5E8] object-cover"
+                className="aspect-[16/9] w-full bg-[#F7F2EA] object-cover"
               />
               <div className="p-6">
                 <p className="text-sm font-medium text-[#9A6844]">不急着买</p>
@@ -112,7 +112,7 @@ export default function ToyGuidePage() {
                 </h2>
                 <div className="mt-5 space-y-3 text-sm text-ink/74">
                   {skipItems.map((item) => (
-                    <div key={item} className="rounded-lg bg-[#FFF5E8] px-3 py-2">
+                    <div key={item} className="rounded-lg bg-[#F7F2EA] px-3 py-2">
                       {item}
                     </div>
                   ))}
@@ -122,7 +122,7 @@ export default function ToyGuidePage() {
           </div>
         </div>
       </section>
-      <section className="bg-[#F7F0E4] py-14">
+      <section className="bg-stone py-14">
         <div className="page-shell grid gap-5 md:grid-cols-[1fr_1fr]">
           <InfoCard title="买之前问自己3个问题" tone="green">
             <div className="space-y-3">

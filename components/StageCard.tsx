@@ -16,7 +16,7 @@ export function StageCard({ age, focus, practice, image, href }: StageCardProps)
         <img
           src={image}
           alt={`${age}可能的发展场景`}
-          className="h-24 w-24 shrink-0 rounded-lg bg-[#E8E2D8] object-cover"
+          className="h-24 w-24 shrink-0 rounded-lg bg-stone object-cover"
         />
         <div>
           <p className="text-sm font-semibold text-sageDark">{age}</p>

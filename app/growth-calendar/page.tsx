@@ -36,7 +36,7 @@ export default function GrowthCalendarPage() {
           </div>
         </div>
       </section>
-      <section className="bg-[#F7F0E4] py-14">
+      <section className="bg-stone py-14">
         <div className="page-shell grid gap-5 md:grid-cols-3">
           <InfoCard title="怎么看发展" tone="green">
             先看宝宝是否有持续进步，再看是否愿意互动和探索。不要只盯着某一个动作有没有准时出现。
@@ -62,7 +62,7 @@ export default function GrowthCalendarPage() {
           </div>
           <Link
             href="/growth-calendar/19-24-months"
-            className="inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-sageDark px-6 py-3 text-sm font-medium text-white transition hover:bg-sage"
+            className="inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-sageDark px-6 py-3 text-sm font-medium text-white transition hover:bg-olive"
           >
             查看19-24个月
             <ArrowRight size={18} />

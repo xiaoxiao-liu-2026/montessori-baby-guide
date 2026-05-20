@@ -62,7 +62,7 @@ export default function MomFaqPage() {
           ))}
         </div>
       </section>
-      <section className="bg-[#F7F0E4] py-14">
+      <section className="bg-stone py-14">
         <div className="page-shell">
           <MomCalmNote>
             <p>
@@ -75,7 +75,7 @@ export default function MomFaqPage() {
             </p>
             <Link
               href="/growth-calendar/19-24-months"
-              className="inline-flex min-h-11 items-center justify-center gap-2 rounded-full bg-sageDark px-5 py-2 text-sm font-medium text-white transition hover:bg-sage"
+              className="inline-flex min-h-11 items-center justify-center gap-2 rounded-full bg-sageDark px-5 py-2 text-sm font-medium text-white transition hover:bg-olive"
             >
               查看示例
               <ArrowRight size={16} />

@@ -13,7 +13,9 @@ import { SectionHeader } from "@/components/SectionHeader";
 import { StageCard } from "@/components/StageCard";
 import { VisualCard } from "@/components/VisualCard";
 import { MomCalmNote } from "@/components/MomCalmNote";
+import { PdfCard } from "@/components/PdfCard";
 import { photos } from "@/lib/photos";
+import { pdfResources } from "@/lib/resources";
 import { GrowthTrendMap } from "@/components/GrowthTrendMap";
 
 export default function HomePage() {
@@ -41,7 +43,7 @@ export default function HomePage() {
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
               <Link
                 href="/growth-calendar"
-                className="inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-sageDark px-6 py-3 text-sm font-medium text-white shadow-soft transition hover:bg-sage"
+                className="inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-sageDark px-6 py-3 text-sm font-medium text-white shadow-soft transition hover:bg-olive"
               >
                 查看 0-3 岁成长月历
                 <ArrowRight size={18} />
@@ -60,15 +62,15 @@ export default function HomePage() {
           <div className="relative">
             <img
               src={photos.hero}
-              alt="孩子在厨房参与洗水果，妈妈在旁边陪伴的真实家庭场景"
+              alt="孩子在家中参与洗水果的真实生活练习场景"
               className="aspect-[4/5] w-full rounded-[20px] border border-[#D8D0C4] object-cover shadow-soft md:aspect-[5/4] lg:aspect-[4/5]"
             />
-            <div className="absolute -bottom-5 left-5 max-w-[86%] rounded-md border border-[#D8D0C4] bg-[#F7F4EE]/95 px-5 py-4 shadow-soft backdrop-blur">
+            <div className="absolute -bottom-5 left-5 max-w-[86%] rounded-md border border-[#D8D0C4] bg-cream/95 px-5 py-4 shadow-soft backdrop-blur">
               <p className="text-sm font-semibold text-sageDark">
                 真实生活里的练习
               </p>
               <p className="mt-1 text-sm leading-6 text-ink/72">
-                洗水果、倒水、收纳、擦桌，孩子是在日常里长出能力。
+                洗水果、倒水、收纳、擦桌，孩子是在真实生活里长出能力。
               </p>
             </div>
           </div>
@@ -96,7 +98,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="bg-[#F7F0E4] py-12">
+      <section className="bg-stone py-12">
         <div className="page-shell">
           <div className="rounded-lg border border-[#D6E1D2] bg-mist p-6 md:p-8">
             <p className="text-sm font-medium text-sageDark">核心声明</p>
@@ -119,7 +121,7 @@ export default function HomePage() {
             title="你可以从这里开始"
             description="从月龄、居家练习、玩具选择、蒙氏理念到妈妈自己的焦虑，把育儿知识拆成能马上使用的小入口。"
           />
-          <div className="mt-8 grid gap-4 md:grid-cols-2 lg:grid-cols-5">
+          <div className="mt-8 grid gap-4 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6">
             {columns.map((column) => {
               const Icon = column.icon;
               return (
@@ -142,7 +144,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section id="stages" className="bg-[#F7F0E4] py-14 md:py-20">
+      <section id="stages" className="bg-stone py-14 md:py-20">
         <div className="page-shell">
           <SectionHeader
             eyebrow="成长月历"
@@ -184,7 +186,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="bg-[#F7F0E4] py-14 md:py-20">
+      <section className="bg-stone py-14 md:py-20">
         <div className="page-shell">
           <SectionHeader
             eyebrow="玩具用品"
@@ -213,13 +215,13 @@ export default function HomePage() {
               <img
                 src="/images/toy-skip-photo.png"
                 alt="不急着买的复杂玩具"
-                className="aspect-[16/9] w-full bg-[#FFF5E8] object-cover"
+                className="aspect-[16/9] w-full bg-[#F7F2EA] object-cover"
               />
               <div className="p-6">
                 <p className="text-sm font-medium text-[#9A6844]">不急着买</p>
                 <div className="mt-4 space-y-3 text-sm text-ink/74">
                   {skipItems.map((item) => (
-                    <div key={item} className="rounded-lg bg-[#FFF5E8] px-3 py-2">
+                    <div key={item} className="rounded-lg bg-[#F7F2EA] px-3 py-2">
                       {item}
                     </div>
                   ))}
@@ -229,7 +231,7 @@ export default function HomePage() {
           </div>
           <Link
             href="/toy-guide"
-            className="mt-7 inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-sageDark px-6 py-3 text-sm font-medium text-white transition hover:bg-sage"
+            className="mt-7 inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-sageDark px-6 py-3 text-sm font-medium text-white transition hover:bg-olive"
           >
             查看玩具怎么选
             <ArrowRight size={18} />
@@ -247,7 +249,34 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="bg-[#F7F0E4] py-14 md:py-20">
+      <section className="bg-stone py-14 md:py-20">
+        <div className="page-shell">
+          <div className="grid gap-8 md:grid-cols-[0.85fr_1.15fr] md:items-end">
+            <SectionHeader
+              eyebrow="资料下载"
+              title="先领取一份简单资料"
+              description="如果你还不知道从哪里开始，可以先从一份简洁的成长月历或居家练习清单开始。"
+            />
+            <div className="text-sm leading-7 text-ink/64">
+              资料会按照“能看懂、能打印、能照着做”的方向整理，后续可替换成正式 PDF 下载。
+            </div>
+          </div>
+          <div className="mt-8 grid gap-5 md:grid-cols-3">
+            {pdfResources.map((resource) => (
+              <PdfCard key={resource.title} resource={resource} compact />
+            ))}
+          </div>
+          <Link
+            href="/downloads"
+            className="mt-7 inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-sageDark px-6 py-3 text-sm font-medium text-white transition hover:bg-olive"
+          >
+            进入资料下载页
+            <ArrowRight size={18} />
+          </Link>
+        </div>
+      </section>
+
+      <section className="bg-stone py-14 md:py-20">
         <div className="page-shell grid gap-8 md:grid-cols-[0.9fr_1.1fr] md:items-center">
           <div>
             <p className="text-sm font-medium text-sageDark">示例内容</p>
@@ -259,7 +288,7 @@ export default function HomePage() {
             </p>
             <Link
               href="/growth-calendar/19-24-months"
-              className="mt-7 inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-sageDark px-6 py-3 text-sm font-medium text-white transition hover:bg-sage"
+              className="mt-7 inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-sageDark px-6 py-3 text-sm font-medium text-white transition hover:bg-olive"
             >
               查看19-24个月指南
               <ArrowRight size={18} />
@@ -302,7 +331,7 @@ export default function HomePage() {
             </div>
             <Link
               href="/growth-calendar"
-              className="mt-7 inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-sageDark px-6 py-3 text-sm font-medium text-white transition hover:bg-sage"
+              className="mt-7 inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-sageDark px-6 py-3 text-sm font-medium text-white transition hover:bg-olive"
             >
               进入成长月历
               <ArrowRight size={18} />

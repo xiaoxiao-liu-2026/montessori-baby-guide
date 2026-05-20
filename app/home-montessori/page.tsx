@@ -75,7 +75,7 @@ export default function HomeMontessoriPage() {
           })}
         </div>
       </section>
-      <section className="bg-[#F7F0E4] py-14">
+      <section className="bg-stone py-14">
         <div className="page-shell">
           <h2 className="text-2xl font-semibold tracking-[0] text-ink">
             家里可以先做的4个小调整

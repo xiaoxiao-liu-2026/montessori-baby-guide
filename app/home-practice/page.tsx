@@ -31,7 +31,7 @@ export default function HomePracticePage() {
       <section className="bg-cream py-14 md:py-20">
         <div className="page-shell grid gap-8 md:grid-cols-[0.85fr_1.15fr] md:items-center">
           <img
-            src={photos.hero}
+            src={photos.kitchenPractice}
             alt="宝宝参与倒水、擦桌和收纳的居家练习场景"
             className="aspect-[4/3] w-full rounded-lg border border-oatmeal bg-white object-cover shadow-sm"
           />
@@ -53,7 +53,7 @@ export default function HomePracticePage() {
           </div>
         </div>
       </section>
-      <section className="bg-[#F7F0E4] py-14 md:py-20">
+      <section className="bg-stone py-14 md:py-20">
         <div className="page-shell">
           <div className="max-w-3xl">
             <p className="text-sm font-medium text-sageDark">练习入口</p>
@@ -85,7 +85,7 @@ export default function HomePracticePage() {
           </MomCalmNote>
           <Link
             href="/growth-calendar/19-24-months"
-            className="mt-6 inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-sageDark px-6 py-3 text-sm font-medium text-white transition hover:bg-sage"
+            className="mt-6 inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-sageDark px-6 py-3 text-sm font-medium text-white transition hover:bg-olive"
           >
             看19-24个月练习示例
             <ArrowRight size={18} />

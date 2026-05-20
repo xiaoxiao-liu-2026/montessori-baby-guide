@@ -11,11 +11,12 @@ export function VisualCard({
   description,
   imageAlt
 }: VisualCardProps) {
-  const isPhoto = image.startsWith("http");
+  const isPhoto =
+    image.startsWith("http") || image.endsWith(".png") || image.endsWith(".jpg");
 
   return (
     <article className="overflow-hidden rounded-lg border border-oatmeal bg-white shadow-sm">
-      <div className={isPhoto ? "bg-[#E8E2D8]" : "bg-[#F8EFE3] p-4"}>
+      <div className={isPhoto ? "bg-stone" : "bg-stone p-4"}>
         <img
           src={image}
           alt={imageAlt ?? title}

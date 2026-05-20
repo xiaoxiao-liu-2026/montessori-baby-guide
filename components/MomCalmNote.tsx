@@ -10,10 +10,10 @@ export function MomCalmNote({
   children
 }: MomCalmNoteProps) {
   return (
-    <aside className="rounded-lg border border-[#E3C6A8] bg-[#FFF5E8] p-5 md:p-6">
+    <aside className="rounded-lg border border-[#E0CFB8] bg-[#F7F2EA] p-5 md:p-6">
       <div className="flex gap-4">
-        <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-apricot/45 text-xl">
-          心
+        <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-white text-sm font-semibold text-sageDark">
+          慢
         </div>
         <div>
           <h2 className="text-xl font-semibold tracking-[0] text-ink">{title}</h2>

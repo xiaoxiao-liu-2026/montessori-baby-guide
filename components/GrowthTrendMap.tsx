@@ -21,7 +21,7 @@ export function GrowthTrendMap() {
   const selectedStage = useMemo(() => findStage(selectedMonth), [selectedMonth]);
 
   return (
-    <section className="bg-[#EEE8DE] py-14 md:py-20">
+    <section className="bg-stone py-14 md:py-20">
       <div className="page-shell">
         <div className="grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-end">
           <div>
@@ -35,13 +35,13 @@ export function GrowthTrendMap() {
               从出生到 3 岁，宝宝会在不同阶段逐渐发展动作、语言、认知、秩序感和生活自理能力。点击月份或阶段，看看这个时候宝宝可能正在经历什么。
             </p>
           </div>
-          <div className="rounded-lg border border-[#D4CBBE] bg-[#F7F4EE] p-4 text-sm leading-7 text-ink/72">
+          <div className="rounded-lg border border-oatmeal bg-white p-4 text-sm leading-7 text-ink/72">
             这张成长趋势图帮助妈妈理解宝宝大概正在发展什么，不是用来比较和打分。每个孩子都有自己的节奏。
           </div>
         </div>
 
-        <div className="mt-8 overflow-hidden rounded-xl border border-[#D4CBBE] bg-[#FBFAF7] shadow-sm">
-          <div className="border-b border-[#E4DCD0] p-4 md:p-5">
+        <div className="mt-8 overflow-hidden rounded-xl border border-oatmeal bg-[#FBFAF7] shadow-sm">
+          <div className="border-b border-oatmeal p-4 md:p-5">
             <div className="flex gap-3 overflow-x-auto pb-2">
               {growthTrendStages.map((stage) => {
                 const active =
@@ -55,7 +55,7 @@ export function GrowthTrendMap() {
                     className={`shrink-0 rounded-full border px-4 py-2 text-sm font-medium transition ${
                       active
                         ? "border-sageDark bg-sageDark text-white"
-                        : "border-[#D4CBBE] bg-white text-ink/72 hover:border-sage"
+                        : "border-oatmeal bg-white text-ink/72 hover:border-sage"
                     }`}
                   >
                     {stage.label}
@@ -77,7 +77,7 @@ export function GrowthTrendMap() {
                     className={`flex min-h-14 min-w-14 shrink-0 flex-col items-center justify-center rounded-lg border text-xs transition ${
                       active
                         ? "border-sageDark bg-mist text-sageDark shadow-sm"
-                        : "border-[#DED6C9] bg-white text-ink/62 hover:border-sage"
+                        : "border-oatmeal bg-white text-ink/62 hover:border-sage"
                     }`}
                     aria-label={`查看${monthLabel(month)}发展趋势`}
                   >
@@ -91,13 +91,13 @@ export function GrowthTrendMap() {
           </div>
 
           <div className="grid gap-0 lg:grid-cols-[0.95fr_1.05fr]">
-            <div className="relative min-h-[280px] bg-[#E9E2D7]">
+            <div className="relative min-h-[280px] bg-stone">
               <img
                 src={selectedStage.image}
                 alt={`${selectedStage.label}宝宝发展趋势代表场景`}
                 className="h-full min-h-[280px] w-full object-cover"
               />
-              <div className="absolute left-4 top-4 rounded-md bg-[#FBFAF7]/92 px-4 py-3 text-sm shadow-sm backdrop-blur">
+              <div className="absolute left-4 top-4 rounded-md bg-cream/92 px-4 py-3 text-sm shadow-sm backdrop-blur">
                 <p className="font-semibold text-sageDark">
                   {selectedStage.label}
                 </p>
@@ -140,7 +140,7 @@ export function GrowthTrendMap() {
                       <span className="h-1.5 overflow-hidden rounded-full bg-[#ECE5DA]">
                         <span
                           className={`block h-full rounded-full transition-all ${
-                            active ? "w-full bg-sageDark" : "w-1/4 bg-[#D8D0C4]"
+                            active ? "w-full bg-sageDark" : "w-1/4 bg-oatmeal"
                           }`}
                         />
                       </span>
@@ -157,7 +157,7 @@ export function GrowthTrendMap() {
                 {selectedStage.focus.map((item) => (
                   <div
                     key={item}
-                    className="rounded-lg border border-[#E4DCD0] bg-white px-4 py-3 text-sm leading-6 text-ink/74"
+                    className="rounded-lg border border-oatmeal bg-white px-4 py-3 text-sm leading-6 text-ink/74"
                   >
                     {item}
                   </div>
@@ -171,7 +171,7 @@ export function GrowthTrendMap() {
                 </p>
               </div>
 
-              <div className="mt-5 rounded-lg bg-[#FFF5E8] p-4 text-sm leading-7 text-ink/72">
+              <div className="mt-5 rounded-lg bg-[#F7F2EA] p-4 text-sm leading-7 text-ink/72">
                 <span className="font-semibold text-ink">妈妈别慌：</span>
                 {selectedStage.calm}
               </div>

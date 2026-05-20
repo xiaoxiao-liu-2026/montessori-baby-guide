@@ -69,7 +69,7 @@ export default function Month19To24Page() {
         </div>
       </section>
 
-      <section className="bg-[#F7F0E4] py-14 md:py-20">
+      <section className="bg-stone py-14 md:py-20">
         <div className="page-shell grid gap-5 md:grid-cols-2">
           <InfoCard title="这个阶段可能在发展什么" tone="green">
             <div className="space-y-3">
@@ -109,9 +109,9 @@ export default function Month19To24Page() {
                   src={activity.image}
                   alt={`${activity.title}练习插图`}
                   className={
-                    activity.image.startsWith("http")
-                      ? "aspect-[4/3] w-full object-cover"
-                      : "w-full bg-[#F8EFE3] p-5"
+                    activity.image.endsWith(".svg")
+                      ? "w-full bg-stone p-5"
+                      : "aspect-[4/3] w-full object-cover"
                   }
                 />
                 <div className="p-5">
@@ -139,7 +139,7 @@ export default function Month19To24Page() {
         </div>
       </section>
 
-      <section className="bg-[#F7F0E4] py-14 md:py-20">
+      <section className="bg-stone py-14 md:py-20">
         <div className="page-shell grid gap-5 md:grid-cols-2">
           <article className="rounded-lg border border-[#D4E2D5] bg-white p-6">
             <p className="text-sm font-medium text-sageDark">建议准备</p>
@@ -161,7 +161,7 @@ export default function Month19To24Page() {
             </h2>
             <div className="mt-5 space-y-3 text-sm text-ink/74">
               {skipItems.map((item) => (
-                <div key={item} className="rounded-lg bg-[#FFF5E8] px-3 py-2">
+                <div key={item} className="rounded-lg bg-[#F7F2EA] px-3 py-2">
                   {item}
                 </div>
               ))}
@@ -199,7 +199,7 @@ export default function Month19To24Page() {
             </Link>
             <Link
               href="/toy-guide"
-              className="inline-flex min-h-11 items-center justify-center gap-2 rounded-full bg-sageDark px-5 py-2 text-sm font-medium text-white transition hover:bg-sage"
+              className="inline-flex min-h-11 items-center justify-center gap-2 rounded-full bg-sageDark px-5 py-2 text-sm font-medium text-white transition hover:bg-olive"
             >
               查看玩具用品怎么选
               <ArrowRight size={16} />
