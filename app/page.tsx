@@ -62,7 +62,7 @@ export default function HomePage() {
           <div className="relative">
             <img
               src={photos.hero}
-              alt="孩子在家中参与洗水果的真实生活练习场景"
+              alt="孩子在家中用小水壶倒水，妈妈在旁边观察的蒙氏生活练习场景"
               className="aspect-[4/5] w-full rounded-[20px] border border-[#D8D0C4] object-cover shadow-soft md:aspect-[5/4] lg:aspect-[4/5]"
             />
             <div className="absolute -bottom-5 left-5 max-w-[86%] rounded-md border border-[#D8D0C4] bg-cream/95 px-5 py-4 shadow-soft backdrop-blur">
