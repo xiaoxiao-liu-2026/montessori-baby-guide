@@ -60,11 +60,22 @@ export default function HomePage() {
             </p>
           </div>
           <div className="relative">
-            <img
-              src={photos.hero}
-              alt="宝宝成长，妈妈不慌，0-3岁蒙氏成长指南主图"
-              className="aspect-video w-full rounded-[20px] border border-[#D8D0C4] object-cover shadow-soft"
-            />
+            <div className="relative aspect-video w-full overflow-hidden rounded-[20px] border border-[#D8D0C4] bg-stone shadow-soft">
+              <img
+                src={photos.hero}
+                alt="孩子在家中用小水壶倒水，妈妈在旁边观察的蒙氏生活练习场景"
+                className="h-full w-full object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-r from-[#F7F9F6]/95 via-[#F7F9F6]/72 to-transparent" />
+              <div className="absolute left-7 top-1/2 max-w-[46%] -translate-y-1/2 text-ink md:left-10">
+                <p className="font-display text-xl font-semibold leading-snug md:text-3xl">
+                  《宝宝成长，妈妈不慌》
+                </p>
+                <p className="mt-3 text-2xl font-semibold leading-snug md:text-4xl">
+                  0-3岁蒙氏成长指南
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
