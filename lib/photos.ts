@@ -1,5 +1,5 @@
 export const photos = {
-  hero: "/images/montessori-hero-pouring.png",
+  hero: "/images/homepage-hero.png",
   pouring: "/images/montessori-hero-pouring.png",
   wiping: "/images/practice-wiping-photo.png",
   washingFruitPrepared: "/images/practice-washing-fruit-photo.png",
