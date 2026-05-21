@@ -62,17 +62,9 @@ export default function HomePage() {
           <div className="relative">
             <img
               src={photos.hero}
-              alt="孩子在家中用小水壶倒水，妈妈在旁边观察的蒙氏生活练习场景"
-              className="aspect-[4/5] w-full rounded-[20px] border border-[#D8D0C4] object-cover shadow-soft md:aspect-[5/4] lg:aspect-[4/5]"
+              alt="宝宝成长，妈妈不慌，0-3岁蒙氏成长指南主图"
+              className="aspect-video w-full rounded-[20px] border border-[#D8D0C4] object-cover shadow-soft"
             />
-            <div className="absolute -bottom-5 left-5 max-w-[86%] rounded-md border border-[#D8D0C4] bg-cream/95 px-5 py-4 shadow-soft backdrop-blur">
-              <p className="text-sm font-semibold text-sageDark">
-                真实生活里的练习
-              </p>
-              <p className="mt-1 text-sm leading-6 text-ink/72">
-                洗水果、倒水、收纳、擦桌，孩子是在真实生活里长出能力。
-              </p>
-            </div>
           </div>
         </div>
       </section>
