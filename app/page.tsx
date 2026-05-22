@@ -1,86 +1,126 @@
 import Link from "next/link";
-import { ArrowRight, CheckCircle2 } from "lucide-react";
 import {
-  audiences,
-  columns,
-  homePracticeCards,
-  practicalCare,
-  recommendedItems,
-  skipItems
-} from "@/lib/content";
-import { SectionHeader } from "@/components/SectionHeader";
-import { VisualCard } from "@/components/VisualCard";
-import { MomCalmNote } from "@/components/MomCalmNote";
-import { PdfCard } from "@/components/PdfCard";
+  ArrowRight,
+  Blocks,
+  CalendarDays,
+  HandHeart,
+  Heart,
+  Leaf
+} from "lucide-react";
 import { photos } from "@/lib/photos";
-import { pdfResources } from "@/lib/resources";
-import { GrowthTrendMap } from "@/components/GrowthTrendMap";
+
+const painPoints = [
+  "不知道宝宝这个阶段真正需要什么",
+  "月龄表、早教课、玩具推荐越看越焦虑",
+  "想科学育儿，但不想把每天变成打卡任务",
+  "希望在真实生活里找到能坚持的方法"
+];
+
+const principles = [
+  {
+    title: "看懂发展",
+    text: "月龄是参考，不是考试表。先理解宝宝正在练习什么，再决定怎么支持。"
+  },
+  {
+    title: "回到生活",
+    text: "倒水、擦桌、收纳、穿鞋，这些日常小事也能支持孩子发展能力。"
+  },
+  {
+    title: "减少焦虑",
+    text: "妈妈能持续、孩子能参与，比一次安排很多活动更重要。"
+  }
+];
+
+const entrances = [
+  {
+    title: "成长月历",
+    text: "按阶段看宝宝发展重点",
+    href: "/growth-calendar",
+    icon: CalendarDays
+  },
+  {
+    title: "居家练习",
+    text: "在家就能做的生活练习",
+    href: "/home-practice",
+    icon: HandHeart
+  },
+  {
+    title: "玩具怎么选",
+    text: "先看需求，再决定买什么",
+    href: "/toy-guide",
+    icon: Blocks
+  },
+  {
+    title: "妈妈不慌",
+    text: "低压力陪伴和情绪缓冲",
+    href: "/mom-faq",
+    icon: Heart
+  }
+];
+
+const exampleTags = ["秩序感", "独立意识", "生活练习", "情绪表达"];
 
 export default function HomePage() {
   return (
-    <main>
-      <section className="soft-band border-b border-oatmeal">
-        <div className="page-shell grid gap-10 py-10 md:min-h-[640px] md:grid-cols-[0.9fr_1.1fr] md:items-center md:py-18 lg:gap-14">
+    <main className="bg-cream">
+      <section className="border-b border-oatmeal/70 bg-cream">
+        <div className="page-shell grid gap-12 py-16 md:min-h-[660px] md:grid-cols-[0.88fr_1.12fr] md:items-center md:py-24 lg:gap-16">
           <div className="max-w-2xl">
             <p className="text-sm font-medium tracking-[0.08em] text-sageDark">
-              0-3岁成长指南 / 居家蒙氏 / 低压力陪伴
+              0-3岁成长指南 / Calm parenting / Montessori inspired
             </p>
-            <h1 className="mt-6 text-4xl font-semibold leading-[1.05] tracking-[0] text-ink md:text-6xl lg:text-7xl">
-              宝宝成长，
+            <h1 className="mt-6 text-4xl font-semibold leading-[1.08] tracking-[0] text-ink md:text-6xl">
+              看懂宝宝成长，
               <br />
-              妈妈不慌
+              妈妈不必慌张
             </h1>
             <p className="mt-7 max-w-xl text-lg leading-9 text-ink/78 md:text-xl">
-              看懂 0-3 岁宝宝每个阶段真正需要什么。
-              <br className="hidden sm:block" />
-              从发展规律、居家练习到玩具选择，帮妈妈少焦虑一点。
+              用温柔、清晰、低压力的方式，理解 0-3 岁宝宝的发展规律、居家练习和玩具选择。
             </p>
-            <p className="mt-6 border-l-4 border-[#9A7A55] pl-4 text-base font-medium leading-8 text-ink/82">
-              先看懂孩子，再决定怎么陪、怎么买、怎么教。
-            </p>
-            <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+            <div className="mt-9 flex flex-col gap-3 sm:flex-row">
               <Link
                 href="/growth-calendar"
                 className="inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-sageDark px-6 py-3 text-sm font-medium text-white shadow-soft transition hover:bg-olive"
               >
-                查看 0-3 岁成长月历
+                查看成长月历
                 <ArrowRight size={18} />
               </Link>
               <Link
-                href="/growth-calendar"
-                className="inline-flex min-h-12 items-center justify-center rounded-full border border-sage/35 bg-white/80 px-6 py-3 text-sm font-medium text-sageDark transition hover:bg-mist"
+                href="/home-practice"
+                className="inline-flex min-h-12 items-center justify-center rounded-full bg-white/80 px-6 py-3 text-sm font-medium text-sageDark ring-1 ring-sage/20 transition hover:bg-mist"
               >
-                从宝宝当前阶段开始
+                从居家练习开始
               </Link>
             </div>
-            <p className="mt-6 max-w-xl text-sm leading-7 text-ink/60">
-              月龄是参考，不是考试表。这里关心宝宝的发展，也关心妈妈能不能轻松一点。
+            <p className="mt-7 max-w-lg text-[15px] leading-7 text-ink/62">
+              不制造焦虑，不追求满分育儿。这里更关心妈妈能不能真的用起来。
             </p>
           </div>
-          <div className="relative">
+          <div>
             <img
               src={photos.hero}
-              alt="宝宝成长，妈妈不慌，0-3岁蒙氏成长指南主图"
-              className="aspect-[1024/572] w-full rounded-[20px] border border-[#D8D0C4] object-cover shadow-soft"
+              alt="宝宝在温柔有秩序的家庭环境中进行倒水练习"
+              className="aspect-[1024/572] w-full rounded-lg object-cover shadow-soft"
             />
           </div>
         </div>
       </section>
 
-      <section className="bg-cream py-14 md:py-20">
+      <section className="bg-cream py-20 md:py-24">
         <div className="page-shell">
-          <SectionHeader
-            eyebrow="适合谁"
-            title="如果你也有这些困惑，这里会适合你"
-            description="新手妈妈常常不是不努力，而是信息太多、标准太多、推荐太多。这里帮你把复杂问题先理清楚。"
-          />
-          <div className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-            {audiences.map((item) => (
+          <div className="max-w-3xl">
+            <p className="text-sm font-medium text-sageDark">妈妈常见困惑</p>
+            <h2 className="mt-4 text-3xl font-semibold leading-tight tracking-[0] text-ink md:text-4xl">
+              新手妈妈常常不是不努力，而是信息太多
+            </h2>
+          </div>
+          <div className="mt-10 grid gap-4 md:grid-cols-2">
+            {painPoints.map((item) => (
               <div
                 key={item}
-                className="flex gap-3 rounded-lg border border-oatmeal bg-white p-4 text-[15px] leading-7 text-ink/76"
+                className="flex items-start gap-4 rounded-lg bg-white/72 p-5 text-base leading-8 text-ink/76"
               >
-                <CheckCircle2 className="mt-1 shrink-0 text-sageDark" size={18} />
+                <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-sage" />
                 <span>{item}</span>
               </div>
             ))}
@@ -88,45 +128,69 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="bg-stone py-12">
+      <section className="bg-stone py-20 md:py-24">
         <div className="page-shell">
-          <div className="rounded-lg border border-[#D6E1D2] bg-mist p-6 md:p-8">
-            <p className="text-sm font-medium text-sageDark">核心声明</p>
-            <h2 className="mt-3 text-2xl font-semibold tracking-[0] text-ink">
-              月龄不是考试表，发展是参考线
-            </h2>
-            <p className="mt-4 max-w-4xl text-base leading-8 text-ink/72">
-              每个宝宝都有自己的成长节奏。这里整理的月龄发展内容，是帮助妈妈理解宝宝可能正在经历什么，而不是用来比较、催促或判断孩子“落后”。如果妈妈明显担心宝宝的动作、语言、互动等发展，可以及时咨询儿保医生或专业人士。
-            </p>
+          <div className="grid gap-10 md:grid-cols-[0.95fr_1.05fr] md:items-start">
+            <div>
+              <p className="text-sm font-medium text-sageDark">核心理念</p>
+              <h2 className="mt-4 text-3xl font-semibold leading-tight tracking-[0] text-ink md:text-4xl">
+                发展不是考试，陪伴也不需要满分
+              </h2>
+              <p className="mt-5 max-w-xl text-base leading-8 text-ink/72">
+                我们把 0-3 岁的发展规律，整理成妈妈能理解、家里能实践、情绪上也能承受的陪伴方式。
+              </p>
+            </div>
+            <div className="grid gap-4">
+              {principles.map((item) => (
+                <article key={item.title} className="rounded-lg bg-cream p-6">
+                  <div className="flex items-center gap-3">
+                    <span className="flex h-9 w-9 items-center justify-center rounded-full bg-mist text-sageDark">
+                      <Leaf size={18} />
+                    </span>
+                    <h3 className="text-xl font-semibold tracking-[0] text-ink">
+                      {item.title}
+                    </h3>
+                  </div>
+                  <p className="mt-4 text-base leading-8 text-ink/74">{item.text}</p>
+                </article>
+              ))}
+            </div>
           </div>
         </div>
       </section>
 
-      <GrowthTrendMap />
-
-      <section className="bg-cream py-14 md:py-20">
+      <section className="bg-cream py-20 md:py-24">
         <div className="page-shell">
-          <SectionHeader
-            eyebrow="栏目入口"
-            title="你可以从这里开始"
-            description="从月龄、居家练习、玩具选择、蒙氏理念到妈妈自己的焦虑，把育儿知识拆成能马上使用的小入口。"
-          />
-          <div className="mt-8 grid gap-4 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6">
-            {columns.map((column) => {
-              const Icon = column.icon;
+          <div className="max-w-3xl">
+            <p className="text-sm font-medium text-sageDark">从这里开始</p>
+            <h2 className="mt-4 text-3xl font-semibold leading-tight tracking-[0] text-ink md:text-4xl">
+              选择一个你现在最需要的入口
+            </h2>
+          </div>
+          <div className="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
+            {entrances.map((item) => {
+              const Icon = item.icon;
+
               return (
                 <Link
-                  href={column.href}
-                  key={column.title}
-                  className="rounded-lg border border-oatmeal bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:border-sage/50 hover:shadow-soft"
+                  key={item.title}
+                  href={item.href}
+                  className="group rounded-lg bg-white p-6 shadow-sm transition hover:-translate-y-0.5 hover:shadow-soft"
                 >
-                  <Icon className="text-sageDark" size={24} />
-                  <h3 className="mt-4 text-lg font-semibold tracking-[0] text-ink">
-                    {column.title}
+                  <span className="flex h-11 w-11 items-center justify-center rounded-full bg-mist text-sageDark">
+                    <Icon size={22} />
+                  </span>
+                  <h3 className="mt-6 text-xl font-semibold tracking-[0] text-ink">
+                    {item.title}
                   </h3>
-                  <p className="mt-3 text-[15px] leading-7 text-ink/74">
-                    {column.description}
-                  </p>
+                  <p className="mt-3 text-base leading-7 text-ink/70">{item.text}</p>
+                  <span className="mt-6 inline-flex items-center gap-2 text-sm font-medium text-sageDark">
+                    查看
+                    <ArrowRight
+                      size={16}
+                      className="transition group-hover:translate-x-0.5"
+                    />
+                  </span>
                 </Link>
               );
             })}
@@ -134,188 +198,40 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="bg-cream py-14 md:py-20">
+      <section className="bg-stone py-20 md:py-24">
         <div className="page-shell">
-          <SectionHeader
-            eyebrow="居家练习"
-            title="普通家庭也能做，不需要昂贵教具"
-            description="练习不一定要像课程。很多支持宝宝发展的机会，就藏在家里的水杯、抹布、篮子、鞋袜和水果里。"
-          />
-          <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {homePracticeCards.map((practice) => (
-              <VisualCard
-                key={practice.title}
-                image={practice.image}
-                title={practice.title}
-                description={practice.text}
-              />
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="bg-stone py-14 md:py-20">
-        <div className="page-shell">
-          <SectionHeader
-            eyebrow="玩具用品"
-            title="玩具用品怎么选：先看懂孩子，再决定买什么"
-            description="不是商家说适合就适合，也不是别人家孩子买了就一定要买。真正适合宝宝的，是能支持他当前发展需求、能让他主动操作、可以重复使用、不会让妈妈更焦虑的材料。"
-          />
-          <div className="mt-8 grid gap-5 md:grid-cols-2">
-            <article className="overflow-hidden rounded-lg border border-[#D4E2D5] bg-white shadow-sm">
-              <img
-                src={photos.toyRecommended}
-                alt="更推荐的生活练习材料"
-                className="aspect-[16/9] w-full bg-mist object-cover"
-              />
-              <div className="p-6">
-                <p className="text-sm font-medium text-sageDark">更推荐</p>
-                <div className="mt-4 grid grid-cols-2 gap-3 text-[15px] leading-6 text-ink/78">
-                  {recommendedItems.map((item) => (
-                    <span key={item} className="rounded-lg bg-mist px-3 py-2">
-                      {item}
+          <div className="rounded-lg bg-cream p-6 md:p-8 lg:p-10">
+            <div className="grid gap-8 lg:grid-cols-[0.8fr_1.2fr] lg:items-center">
+              <div>
+                <p className="text-sm font-medium text-sageDark">内容示例</p>
+                <h2 className="mt-4 text-3xl font-semibold leading-tight tracking-[0] text-ink md:text-4xl">
+                  示例：19-24 个月
+                </h2>
+                <p className="mt-5 text-base leading-8 text-ink/74">
+                  这个阶段，宝宝常常更想“自己来”，也更需要稳定流程和真实生活参与。
+                </p>
+              </div>
+              <div>
+                <div className="flex flex-wrap gap-3">
+                  {exampleTags.map((tag) => (
+                    <span
+                      key={tag}
+                      className="rounded-full bg-white px-4 py-2 text-sm font-medium text-ink/74"
+                    >
+                      {tag}
                     </span>
                   ))}
                 </div>
-              </div>
-            </article>
-            <article className="overflow-hidden rounded-lg border border-[#EED1B7] bg-white shadow-sm">
-              <img
-                src={photos.toyNotPriority}
-                alt="不急着买的复杂玩具"
-                className="aspect-[16/9] w-full bg-[#F7F2EA] object-cover"
-              />
-              <div className="p-6">
-                <p className="text-base font-semibold text-[#9A6844]">
-                  不急着买：高刺激、低参与的玩具
-                </p>
-                <p className="mt-3 text-[15px] leading-7 text-ink/72">
-                  不是完全不能买，而是不急着买、不要盲买。这些玩具往往声音、灯光、按钮很多，但孩子真正主动操作和重复探索的机会不一定多。
-                </p>
-                <div className="mt-4 space-y-3 text-[15px] leading-6 text-ink/78">
-                  {skipItems.map((item) => (
-                    <div key={item} className="rounded-lg bg-[#F7F2EA] px-3 py-2">
-                      {item}
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </article>
-          </div>
-          <Link
-            href="/toy-guide"
-            className="mt-7 inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-sageDark px-6 py-3 text-sm font-medium text-white transition hover:bg-olive"
-          >
-            查看玩具怎么选
-            <ArrowRight size={18} />
-          </Link>
-        </div>
-      </section>
-
-      <section className="bg-cream py-14 md:py-20">
-        <div className="page-shell">
-          <MomCalmNote title="妈妈别慌：科学育儿不是把妈妈逼崩溃">
-            <p>
-              不需要每天安排很多活动，也不需要买一堆昂贵教具。真实生活里的倒水、擦桌子、收纳、洗水果、穿鞋，都是孩子发展动手能力、独立性和秩序感的机会。妈妈累的时候，一天只做一件小事也可以。
-            </p>
-          </MomCalmNote>
-        </div>
-      </section>
-
-      <section className="bg-stone py-14 md:py-20">
-        <div className="page-shell">
-          <div className="grid gap-8 md:grid-cols-[0.85fr_1.15fr] md:items-end">
-            <SectionHeader
-              eyebrow="资料下载"
-              title="先领取一份简单资料"
-              description="如果你还不知道从哪里开始，可以先从成长月历简表和玩具选择判断表开始。"
-            />
-            <div className="text-[15px] leading-7 text-ink/70">
-              资料会按照“能看懂、能打印、能照着做”的方向整理，后续可替换成正式 PDF 下载。
-            </div>
-          </div>
-          <div className="mt-8 grid gap-5 md:grid-cols-3">
-            {pdfResources.map((resource) => (
-              <PdfCard key={resource.title} resource={resource} compact />
-            ))}
-          </div>
-          <Link
-            href="/downloads"
-            className="mt-7 inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-sageDark px-6 py-3 text-sm font-medium text-white transition hover:bg-olive"
-          >
-            进入资料下载页
-            <ArrowRight size={18} />
-          </Link>
-        </div>
-      </section>
-
-      <section className="bg-stone py-10 md:py-12">
-        <div className="page-shell">
-          <div>
-            <h2 className="text-2xl font-semibold tracking-[0] text-ink md:text-3xl">
-              先看一个阶段示例：19-24个月
-            </h2>
-            <p className="mt-4 max-w-3xl text-base leading-8 text-ink/74">
-              这个阶段，很多宝宝会更想“自己来”，也更容易因为流程被打乱、东西不在原位、想做但做不好而情绪爆发。
-            </p>
-          </div>
-          <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
-            {[
-              ["可能的发展", "秩序感、独立意识、生活练习、情绪表达"],
-              ["常见行为", "想自己倒水、穿鞋、拿东西；喜欢重复；东西放错地方会生气"],
-              ["可以支持", "倒水、擦桌子、收纳、穿脱鞋袜、洗水果"],
-              ["妈妈别慌", "这不是孩子事多，很多时候是发展正在发生"]
-            ].map(([title, text]) => (
-              <article key={title} className="rounded-lg border border-oatmeal bg-white p-4 shadow-sm">
-                <h3 className="text-base font-semibold tracking-[0] text-ink">{title}</h3>
-                <p className="mt-3 text-[15px] leading-7 text-ink/72">{text}</p>
-              </article>
-            ))}
-          </div>
-          <div>
-            <Link
-              href="/growth-calendar/19-24-months"
-              className="mt-6 inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-sageDark px-6 py-3 text-sm font-medium text-white transition hover:bg-olive"
-            >
-              查看19-24个月指南
-              <ArrowRight size={18} />
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      <section className="bg-cream py-14 md:py-20">
-        <div className="page-shell grid gap-8 md:grid-cols-[1fr_0.8fr] md:items-center">
-          <div>
-            <SectionHeader
-              eyebrow="低压力陪伴"
-              title="我们更关心：妈妈能不能真的用起来"
-              description="这个网站不是告诉妈妈每天必须安排多少活动，也不是推荐妈妈买一堆昂贵教具。我们更关注真实生活里可持续、能坚持、能让妈妈少一点焦虑的方法。"
-            />
-            <div className="mt-6 grid gap-3 sm:grid-cols-2">
-              {practicalCare.map((item) => (
-                <div
-                  key={item}
-                  className="flex gap-3 rounded-lg border border-oatmeal bg-white p-4 text-[15px] leading-7 text-ink/74"
+                <Link
+                  href="/growth-calendar/19-24-months"
+                  className="mt-7 inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-sageDark px-6 py-3 text-sm font-medium text-white transition hover:bg-olive"
                 >
-                  <CheckCircle2 className="mt-1 shrink-0 text-sageDark" size={18} />
-                  <span>{item}</span>
-                </div>
-              ))}
+                  查看完整示例
+                  <ArrowRight size={18} />
+                </Link>
+              </div>
             </div>
-            <Link
-              href="/growth-calendar"
-              className="mt-7 inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-sageDark px-6 py-3 text-sm font-medium text-white transition hover:bg-olive"
-            >
-              进入成长月历
-              <ArrowRight size={18} />
-            </Link>
           </div>
-          <img
-            src={photos.momCalm}
-            alt="孩子在有秩序的家庭环境中安静探索"
-            className="mx-auto aspect-[4/3] w-full max-w-sm rounded-lg border border-oatmeal object-cover shadow-sm"
-          />
         </div>
       </section>
     </main>

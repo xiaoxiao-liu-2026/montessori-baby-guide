@@ -3,9 +3,9 @@
 @tailwind utilities;
 
 :root {
-  --font-sans: "Noto Sans SC", "PingFang SC", "Microsoft YaHei",
-    -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial,
-    sans-serif;
+  --font-sans: "HarmonyOS Sans", "Noto Sans SC", "PingFang SC",
+    "Microsoft YaHei", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Helvetica Neue", Arial, sans-serif;
   --font-serif: "Noto Serif SC", "Source Han Serif SC", "Songti SC",
     "SimSun", Georgia, serif;
 }
