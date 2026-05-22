@@ -2,6 +2,7 @@ type VisualCardProps = {
   image: string;
   title: string;
   description?: string;
+  stage?: string;
   imageAlt?: string;
 };
 
@@ -9,6 +10,7 @@ export function VisualCard({
   image,
   title,
   description,
+  stage,
   imageAlt
 }: VisualCardProps) {
   const isPhoto =
@@ -28,6 +30,11 @@ export function VisualCard({
         />
       </div>
       <div className="p-5">
+        {stage ? (
+          <p className="mb-3 inline-flex rounded-full bg-mist px-3 py-1 text-xs font-medium text-sageDark">
+            {stage}
+          </p>
+        ) : null}
         <h3 className="text-lg font-semibold tracking-[0] text-ink">{title}</h3>
         {description ? (
           <p className="mt-3 text-[15px] leading-7 text-ink/74">{description}</p>

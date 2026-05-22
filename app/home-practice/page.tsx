@@ -14,10 +14,11 @@ export const metadata: Metadata = {
 };
 
 const principles = [
-  "普通家庭也能做，不需要昂贵教具。",
-  "先看孩子当下能力，再选择一两个容易开始的小练习。",
-  "重点不是做得标准，而是让孩子参与、重复、慢慢自己来。",
-  "妈妈累的时候，低配陪伴也算陪伴。"
+  "普通家庭也能做，不需要昂贵教具",
+  "先看孩子当下能力，再选择一个容易开始的小练习",
+  "一次只做一个，不需要每天安排很多",
+  "重点不是做得标准，而是让孩子参与、重复、慢慢自己来",
+  "涉及水、小颗粒和工具时，成人要在旁边看护"
 ];
 
 export default function HomePracticePage() {
@@ -43,13 +44,16 @@ export default function HomePracticePage() {
               {principles.map((item) => (
                 <div
                   key={item}
-                  className="flex gap-3 rounded-lg border border-oatmeal bg-white p-4 text-sm leading-7 text-ink/72"
+                  className="flex gap-3 rounded-lg border border-oatmeal bg-white p-4 text-[15px] leading-7 text-ink/74"
                 >
                   <CheckCircle2 className="mt-1 shrink-0 text-sageDark" size={18} />
                   <span>{item}</span>
                 </div>
               ))}
             </div>
+            <p className="mt-5 rounded-lg bg-[#F7F2EA] p-4 text-[15px] leading-7 text-ink/76">
+              涉及水、小颗粒、清洁工具、厨房物品时，请根据孩子年龄和能力调整材料，并在成人看护下进行，避免误吞、滑倒或接触不适合孩子的物品。
+            </p>
           </div>
         </div>
       </section>
@@ -70,6 +74,7 @@ export default function HomePracticePage() {
                 key={practice.title}
                 image={practice.image}
                 title={practice.title}
+                stage={practice.stage}
                 description={practice.text}
               />
             ))}
@@ -78,9 +83,9 @@ export default function HomePracticePage() {
       </section>
       <section className="bg-cream py-14">
         <div className="page-shell">
-          <MomCalmNote>
+          <MomCalmNote title="妈妈别慌：生活练习不是每天打卡">
             <p>
-              居家练习不是打卡任务。孩子今天愿意擦一下桌子、倒一次水、收一个玩具，都是在真实生活里积累能力。妈妈不用把每一天都安排满。
+              这些练习不是每天必须完成的任务。孩子愿意参与时，可以给他一点机会；妈妈累的时候，只做一件小事也可以。真正重要的是让孩子在真实生活中慢慢获得“我可以自己来”的经验。
             </p>
           </MomCalmNote>
           <Link

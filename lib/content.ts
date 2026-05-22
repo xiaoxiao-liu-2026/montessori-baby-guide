@@ -141,32 +141,38 @@ export const homePracticeCards = [
   {
     title: "倒水练习",
     image: photos.pouring,
+    stage: "18-36个月参考",
     text: "小水壶、小杯子和托盘就够了。水少一点，洒了也可以顺便练习擦一擦。"
   },
   {
     title: "擦桌子",
     image: photos.wiping,
+    stage: "16-36个月参考",
     text: "准备小抹布和小喷壶，重点不是擦得多干净，而是参与真实生活。"
   },
   {
     title: "收纳玩具",
     image: photos.tidying,
+    stage: "12-36个月参考",
     text: "固定篮子或收纳盒，从一类玩具开始，帮助宝宝建立物品归位的秩序。"
   },
   {
     title: "穿脱鞋袜",
     image: photos.shoes,
+    stage: "18-36个月参考",
     text: "选容易穿脱的鞋袜，给孩子一点时间，动作慢也没关系。"
   },
   {
     title: "洗水果 / 洗菜",
     image: photos.washingStrawberries,
-    text: "小盆、少量水果或蔬菜，配合防滑地面，让宝宝参与真实家务。"
+    stage: "18-36个月参考",
+    text: "小盆、少量水果或蔬菜，让宝宝参与真实家务。水量少一点，地面保持防滑。"
   },
   {
     title: "舀豆子 / 转移工作",
     image: photos.spooning,
-    text: "用小勺、两个小碗和托盘练习转移，支持手部控制、专注和秩序感。"
+    stage: "24-36个月参考，需防误吞",
+    text: "用小勺在两个小碗之间转移大颗粒材料，支持手部控制、专注和秩序感。小颗粒材料需全程看护，口欲明显的孩子可换成大块安全材料。"
   }
 ];
 
