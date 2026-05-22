@@ -188,7 +188,7 @@ export default function HomePage() {
           <div className="mt-8 grid gap-5 md:grid-cols-2">
             <article className="overflow-hidden rounded-lg border border-[#D4E2D5] bg-white shadow-sm">
               <img
-                src="/images/toy-recommend-photo.png"
+                src={photos.toyRecommended}
                 alt="更推荐的生活练习材料"
                 className="aspect-[16/9] w-full bg-mist object-cover"
               />
@@ -205,7 +205,7 @@ export default function HomePage() {
             </article>
             <article className="overflow-hidden rounded-lg border border-[#EED1B7] bg-white shadow-sm">
               <img
-                src="/images/toy-skip-photo.png"
+                src={photos.toyNotPriority}
                 alt="不急着买的复杂玩具"
                 className="aspect-[16/9] w-full bg-[#F7F2EA] object-cover"
               />

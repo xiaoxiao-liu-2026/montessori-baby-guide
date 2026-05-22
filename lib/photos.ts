@@ -5,49 +5,38 @@ export const photos = {
   washingFruitPrepared: "/images/practice-washing-fruit-photo.png",
   tidying: "/images/practice-tidying-photo.png",
   spooning: "/images/practice-spooning-photo.png",
-  washingFruit:
-    "https://images.pexels.com/photos/5082207/pexels-photo-5082207.jpeg?auto=compress&cs=tinysrgb&w=1200",
-  washingStrawberries:
-    "https://images.pexels.com/photos/7677921/pexels-photo-7677921.jpeg?auto=compress&cs=tinysrgb&w=1200",
-  kitchenPractice:
-    "https://images.pexels.com/photos/33737279/pexels-photo-33737279.jpeg?auto=compress&cs=tinysrgb&w=1200",
-  woodenPlay:
-    "https://images.pexels.com/photos/8504337/pexels-photo-8504337.jpeg?auto=compress&cs=tinysrgb&w=1200",
-  calmPlay:
-    "https://images.pexels.com/photos/5083230/pexels-photo-5083230.jpeg?auto=compress&cs=tinysrgb&w=1200",
+  washingFruit: "/images/practice-washing-fruit-photo.png",
+  washingStrawberries: "/images/practice-washing-fruit-photo.png",
+  kitchenPractice: "/images/kitchen-practice-photo.png",
+  woodenPlay: "/images/stage-7-9-photo.png",
+  calmPlay: "/images/mom-calm-photo.png",
   momCalm: "/images/mom-calm-photo.png",
-  shoes:
-    "https://images.pexels.com/photos/5094102/pexels-photo-5094102.jpeg?auto=compress&cs=tinysrgb&w=1200",
-  reading:
-    "https://images.pexels.com/photos/3890903/pexels-photo-3890903.jpeg?auto=compress&cs=tinysrgb&w=1200",
-  orderedHome:
-    "https://images.pexels.com/photos/15243508/pexels-photo-15243508.jpeg?auto=compress&cs=tinysrgb&w=1200"
+  toyRecommended: "/images/toy-recommend-photo.png",
+  toyNotPriority: "/images/toy-skip-photo.png",
+  toyRecommendedItems: "/images/toy-recommend-photo.png",
+  toyNotPriorityItems: "/images/toy-skip-photo.png",
+  shoes: "/images/practice-shoes-photo.png",
+  reading: "/images/stage-31-36-photo.png",
+  orderedHome: "/images/practice-tidying-photo.png"
 };
 
 export const stagePhotos = {
-  months0to3:
-    "https://images.pexels.com/photos/34336729/pexels-photo-34336729.jpeg?auto=compress&cs=tinysrgb&w=900",
-  months4to6:
-    "https://images.pexels.com/photos/29857302/pexels-photo-29857302.jpeg?auto=compress&cs=tinysrgb&w=900",
-  months7to9:
-    "https://images.pexels.com/photos/8504337/pexels-photo-8504337.jpeg?auto=compress&cs=tinysrgb&w=900",
-  months10to12:
-    "https://images.pexels.com/photos/30591140/pexels-photo-30591140.jpeg?auto=compress&cs=tinysrgb&w=900",
-  months13to15:
-    "https://images.pexels.com/photos/459976/pexels-photo-459976.jpeg?auto=compress&cs=tinysrgb&w=900",
-  months16to18:
-    "/images/practice-tidying-photo.png",
+  months0to3: "/images/stage-0-3-photo.png",
+  months4to6: "/images/stage-4-6-photo.png",
+  months7to9: "/images/stage-7-9-photo.png",
+  months10to12: "/images/stage-10-12-photo.png",
+  months13to15: "/images/stage-13-15-photo.png",
+  months16to18: "/images/practice-tidying-photo.png",
   months19to24: "/images/montessori-hero-pouring.png",
   months25to30: "/images/practice-spooning-photo.png",
-  months31to36:
-    "https://images.pexels.com/photos/3890903/pexels-photo-3890903.jpeg?auto=compress&cs=tinysrgb&w=900"
+  months31to36: "/images/stage-31-36-photo.png"
 };
 
 export const homeModulePhotos = {
   hero: photos.hero,
   trend: stagePhotos.months19to24,
   practiceIntro: photos.wiping,
-  toyGuide: "/images/toy-recommend-photo.png",
+  toyGuide: photos.toyRecommended,
   calm: photos.momCalm,
   downloads: photos.orderedHome,
   about: photos.calmPlay,

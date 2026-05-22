@@ -4,6 +4,7 @@ import { PageHero } from "@/components/PageHero";
 import { InfoCard } from "@/components/InfoCard";
 import { recommendedItems, skipItems, toyPrinciples } from "@/lib/content";
 import { MomCalmNote } from "@/components/MomCalmNote";
+import { photos } from "@/lib/photos";
 
 export const metadata: Metadata = {
   title: "玩具怎么选 | 宝宝成长，妈妈不慌"
@@ -81,7 +82,7 @@ export default function ToyGuidePage() {
           <div className="grid gap-5 md:grid-cols-2">
             <article className="overflow-hidden rounded-lg border border-[#D4E2D5] bg-white shadow-sm">
               <img
-                src="/images/toy-recommend-photo.png"
+                src={photos.toyRecommended}
                 alt="更推荐的真实生活材料插图"
                 className="aspect-[16/9] w-full bg-mist object-cover"
               />
@@ -101,7 +102,7 @@ export default function ToyGuidePage() {
             </article>
             <article className="overflow-hidden rounded-lg border border-[#EED1B7] bg-white shadow-sm">
               <img
-                src="/images/toy-skip-photo.png"
+                src={photos.toyNotPriority}
                 alt="不急着买的复杂声光电玩具插图"
                 className="aspect-[16/9] w-full bg-[#F7F2EA] object-cover"
               />
