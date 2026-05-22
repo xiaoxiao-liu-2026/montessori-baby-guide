@@ -59,6 +59,9 @@ export default function ToyGuidePage() {
               </InfoCard>
             ))}
           </div>
+          <p className="rounded-lg bg-white p-4 text-[15px] leading-7 text-ink/72 md:col-start-2">
+            这里是选择方向，不是购买清单。每个孩子节奏不同，可以根据宝宝兴趣和能力调整。
+          </p>
         </div>
       </section>
       <section className="bg-cream pb-14 md:pb-20">
@@ -130,8 +133,8 @@ export default function ToyGuidePage() {
       </section>
       <section className="bg-stone py-14">
         <div className="page-shell grid gap-5 md:grid-cols-[1fr_1fr]">
-          <InfoCard title="买之前问自己3个问题" tone="green">
-            <div className="space-y-3">
+          <InfoCard title="买之前，先问自己3个问题" tone="green">
+            <div className="space-y-3 font-medium text-ink/82">
               <p>孩子能主动操作吗？</p>
               <p>能重复使用吗？</p>
               <p>是孩子在做，还是玩具在表演？</p>
@@ -140,6 +143,9 @@ export default function ToyGuidePage() {
           <InfoCard title="一个很实用的判断">
             如果一个玩具只能按按钮、看灯光、听声音，宝宝真正动手的机会可能不多。更值得留下的玩具，通常能让孩子反复拿、放、倒、堆、配对、分类、推拉、打开和合上。
           </InfoCard>
+          <div className="rounded-lg border border-[#E8D3B7] bg-[#F7F2EA] p-5 text-[15px] leading-7 text-ink/76 md:col-span-2">
+            小颗粒、串珠、豆子等材料需要成人全程看护，口欲明显或年龄较小的孩子，请选择更大、更安全的材料。
+          </div>
         </div>
       </section>
       <section className="bg-cream py-12">
