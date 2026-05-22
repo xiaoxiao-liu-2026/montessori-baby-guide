@@ -36,7 +36,7 @@ export function Footer() {
         </div>
         <div className="text-sm leading-7 text-ink/68">
           <p className="font-semibold text-ink">联系与版权</p>
-          <p className="mt-3">邮箱：hello@example.com</p>
+          <p className="mt-3">联系方式建设中</p>
           <p className="mt-3 text-xs text-ink/52">
             © 2026 宝宝成长，妈妈不慌。内容持续整理中。
           </p>

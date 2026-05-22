@@ -13,17 +13,19 @@ const painPoints = [
   "不知道宝宝这个阶段真正需要什么",
   "月龄表、早教课、玩具推荐越看越焦虑",
   "想科学育儿，但不想把每天变成打卡任务",
+  "听过蒙氏理念，但不知道怎么在家落地",
+  "买了很多玩具，孩子却不怎么主动玩",
   "希望在真实生活里找到能坚持的方法"
 ];
 
 const principles = [
   {
     title: "看懂发展",
-    text: "月龄是参考，不是考试表。先理解宝宝正在练习什么，再决定怎么支持。"
+    text: "月龄是参考，不是考试表。先理解宝宝可能正在经历什么，再决定怎么支持。"
   },
   {
     title: "回到生活",
-    text: "倒水、擦桌、收纳、穿鞋，这些日常小事也能支持孩子发展能力。"
+    text: "倒水、擦桌、收纳、穿鞋，这些普通小事也能支持孩子发展独立性和秩序感。"
   },
   {
     title: "减少焦虑",
@@ -34,25 +36,25 @@ const principles = [
 const entrances = [
   {
     title: "成长月历",
-    text: "按阶段看宝宝发展重点",
+    text: "按阶段看宝宝可能的发展重点",
     href: "/growth-calendar",
     icon: CalendarDays
   },
   {
     title: "居家练习",
-    text: "在家就能做的生活练习",
+    text: "在真实生活里做低压力练习",
     href: "/home-practice",
     icon: HandHeart
   },
   {
     title: "玩具怎么选",
-    text: "先看需求，再决定买什么",
+    text: "先看发展需求，再决定买什么",
     href: "/toy-guide",
     icon: Blocks
   },
   {
     title: "妈妈不慌",
-    text: "低压力陪伴和情绪缓冲",
+    text: "给妈妈自己的情绪缓冲和陪伴",
     href: "/mom-faq",
     icon: Heart
   }
@@ -67,7 +69,7 @@ export default function HomePage() {
         <div className="page-shell grid gap-12 py-16 md:min-h-[660px] md:grid-cols-[0.88fr_1.12fr] md:items-center md:py-24 lg:gap-16">
           <div className="max-w-2xl">
             <p className="text-sm font-medium tracking-[0.08em] text-sageDark">
-              0-3岁成长指南 / Calm parenting / Montessori inspired
+              0-3岁成长指南 / 低压力陪伴 / 居家蒙氏启发
             </p>
             <h1 className="mt-6 text-4xl font-semibold leading-[1.08] tracking-[0] text-ink md:text-6xl">
               看懂宝宝成长，
@@ -164,7 +166,7 @@ export default function HomePage() {
           <div className="max-w-3xl">
             <p className="text-sm font-medium text-sageDark">从这里开始</p>
             <h2 className="mt-4 text-3xl font-semibold leading-tight tracking-[0] text-ink md:text-4xl">
-              选择一个你现在最需要的入口
+              从你现在最困惑的地方开始
             </h2>
           </div>
           <div className="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
@@ -210,6 +212,9 @@ export default function HomePage() {
                 <p className="mt-5 text-base leading-8 text-ink/74">
                   这个阶段，宝宝常常更想“自己来”，也更需要稳定流程和真实生活参与。
                 </p>
+                <p className="mt-3 text-base leading-8 text-ink/70">
+                  先从一个阶段开始，看懂孩子为什么总想“自己来”。
+                </p>
               </div>
               <div>
                 <div className="flex flex-wrap gap-3">
@@ -231,6 +236,28 @@ export default function HomePage() {
                 </Link>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-cream pb-20 md:pb-24">
+        <div className="page-shell">
+          <div className="flex flex-col gap-5 rounded-lg bg-white p-6 shadow-sm md:flex-row md:items-center md:justify-between md:p-7">
+            <div>
+              <h2 className="text-2xl font-semibold tracking-[0] text-ink">
+                想先保存一份简表？
+              </h2>
+              <p className="mt-3 text-base leading-7 text-ink/72">
+                可以从 0-3 岁宝宝成长月历简表开始。
+              </p>
+            </div>
+            <Link
+              href="/downloads"
+              className="inline-flex min-h-11 items-center justify-center gap-2 rounded-full bg-sageDark px-5 py-2 text-sm font-medium text-white transition hover:bg-olive"
+            >
+              查看资料下载
+              <ArrowRight size={16} />
+            </Link>
           </div>
         </div>
       </section>

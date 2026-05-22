@@ -23,7 +23,7 @@ export default function ContactPage() {
               <Mail className="text-sageDark" size={24} />
               <h2 className="mt-4 text-xl font-semibold text-ink">邮箱</h2>
               <p className="mt-3 text-sm leading-7 text-ink/70">
-                hello@example.com
+                联系方式建设中
               </p>
             </article>
             <article className="rounded-lg border border-oatmeal bg-white p-5 shadow-sm">
