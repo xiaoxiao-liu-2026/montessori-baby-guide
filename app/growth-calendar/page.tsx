@@ -15,13 +15,28 @@ export default function GrowthCalendarPage() {
   return (
     <main>
       <PageHero
-        eyebrow="月龄发展指南"
+        eyebrow="按阶段看发展"
         title="看懂0-3岁宝宝每个阶段正在练习什么"
-        description="月龄发展不是考试表，而是一张帮助妈妈理解宝宝的地图。你可以按宝宝当前阶段查看重点，再选择家里容易做到的小练习。"
+        description="选择宝宝当前阶段，先看这个时期可能的发展重点，再看适合在家做的生活练习和陪伴方式。这里不是达标表，而是一张帮助妈妈理解孩子的参考地图。"
       />
       <section className="bg-cream py-14 md:py-20">
         <div className="page-shell">
-          <MomCalmNote />
+          <MomCalmNote>
+            <p>
+              这个阶段的内容是帮助你理解宝宝可能正在发展什么，不是用来比较孩子。每个宝宝都有自己的节奏，早一点、晚一点并不代表好坏。妈妈能做的，是提供安全、合适、低压力的环境支持。本站内容仅作为育儿参考，不能替代儿保、医生或专业评估。
+            </p>
+          </MomCalmNote>
+          <div className="mt-8 grid gap-5 md:grid-cols-3">
+            <InfoCard title="怎么看发展" tone="green">
+              先看宝宝是否有持续进步，再看是否愿意互动和探索。不要只盯着某一个动作有没有准时出现。
+            </InfoCard>
+            <InfoCard title="怎么做练习" tone="apricot">
+              把练习放进日常，趴玩、递物、收纳、洗手、穿脱鞋袜，都可以是宝宝的发展机会。
+            </InfoCard>
+            <InfoCard title="什么时候求助" tone="white">
+              如果出现明显倒退、长期没有回应、喂养睡眠严重困难，或者妈妈强烈担心，请咨询儿保医生。
+            </InfoCard>
+          </div>
           <div className="mt-8 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
             {stages.map((stage) => (
               <StageCard
@@ -34,19 +49,6 @@ export default function GrowthCalendarPage() {
               />
             ))}
           </div>
-        </div>
-      </section>
-      <section className="bg-stone py-14">
-        <div className="page-shell grid gap-5 md:grid-cols-3">
-          <InfoCard title="怎么看发展" tone="green">
-            先看宝宝是否有持续进步，再看是否愿意互动和探索。不要只盯着某一个动作有没有准时出现。
-          </InfoCard>
-          <InfoCard title="怎么做练习" tone="apricot">
-            把练习放进日常，趴玩、递物、收纳、洗手、穿脱鞋袜，都可以是宝宝的发展机会。
-          </InfoCard>
-          <InfoCard title="什么时候求助" tone="white">
-            如果出现明显倒退、长期没有回应、喂养睡眠严重困难，或者妈妈强烈担心，请咨询儿保医生。
-          </InfoCard>
         </div>
       </section>
       <section className="bg-cream py-12">

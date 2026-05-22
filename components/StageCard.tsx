@@ -16,7 +16,7 @@ export function StageCard({ age, focus, practice, image, href }: StageCardProps)
         <img
           src={image}
           alt={`${age}可能的发展场景`}
-          className="h-24 w-24 shrink-0 rounded-lg bg-stone object-cover"
+          className="aspect-[4/3] w-32 shrink-0 rounded-lg bg-stone object-cover sm:w-36"
         />
         <div>
           <p className="text-sm font-semibold text-sageDark">{age}</p>
@@ -25,13 +25,17 @@ export function StageCard({ age, focus, practice, image, href }: StageCardProps)
           </h3>
         </div>
       </div>
-      <p className="mt-4 text-sm leading-7 text-ink/68">{practice}</p>
-      {href ? (
-        <p className="mt-4 inline-flex items-center gap-2 text-sm font-medium text-sageDark">
-          查看示例内容
-          <ArrowRight size={16} />
-        </p>
-      ) : null}
+      <p className="mt-4 text-[15px] leading-7 text-ink/72">{practice}</p>
+      <p className="mt-4 inline-flex items-center gap-2 text-sm font-medium text-sageDark">
+        {href ? (
+          <>
+            查看详细指南
+            <ArrowRight size={16} />
+          </>
+        ) : (
+          "查看支持方向"
+        )}
+      </p>
     </>
   );
 
