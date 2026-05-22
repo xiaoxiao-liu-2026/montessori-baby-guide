@@ -33,7 +33,7 @@ export function PdfCard({ resource, compact = false }: PdfCardProps) {
           </h3>
         </div>
       </div>
-      <p className="mt-4 flex-1 text-sm leading-7 text-ink/70">
+      <p className="mt-4 flex-1 text-[15px] leading-7 text-ink/74">
         {resource.description}
       </p>
       {!compact ? (

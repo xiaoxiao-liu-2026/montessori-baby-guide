@@ -28,43 +28,37 @@ export const audiences = [
 export const columns = [
   {
     title: "0-3岁成长月历",
-    description:
-      "按阶段整理宝宝常见发展方向、行为特点和妈妈可以提供的支持。",
+    description: "按阶段看宝宝发展重点。",
     icon: CalendarDays,
     href: "/growth-calendar"
   },
   {
     title: "居家练习",
-    description:
-      "用家里常见物品，做适合宝宝阶段的动手、语言、感官、动作和生活自理练习。",
+    description: "在家就能做的生活练习。",
     icon: HandHeart,
     href: "/home-practice"
   },
   {
     title: "玩具怎么选",
-    description:
-      "帮妈妈判断这个阶段真正需要什么，哪些可以买，哪些不急着买，哪些可以用家里物品替代。",
+    description: "先看需求，再决定买什么。",
     icon: Blocks,
     href: "/toy-guide"
   },
   {
     title: "蒙氏轻理解",
-    description:
-      "用白话解释蒙氏理念：独立性、秩序感、生活练习、真实参与、自己来。",
+    description: "把蒙氏理念讲成妈妈能懂的话。",
     icon: Sparkles,
     href: "/home-montessori"
   },
   {
     title: "妈妈不慌",
-    description:
-      "给妈妈低压力陪伴建议，减少焦虑、比较和自我责备。",
+    description: "低压力陪伴和情绪缓冲。",
     icon: HelpCircle,
     href: "/mom-faq"
   },
   {
     title: "资料下载",
-    description:
-      "整理成长月历简表、居家练习清单和玩具选择判断表，方便妈妈保存和打印。",
+    description: "领取简表和清单。",
     icon: FileText,
     href: "/downloads"
   }
@@ -188,10 +182,10 @@ export const recommendedItems = [
 ];
 
 export const skipItems = [
-  "声光电玩具",
-  "过度宣传开发智力的复杂玩具",
-  "孩子只能被动看的玩具",
-  "需要妈妈全程高强度操作的复杂教具"
+  "声光按钮多，孩子主要在看",
+  "功能很多，但孩子操作少",
+  "宣传“开发智力”，但玩法被动",
+  "需要大人一直演示，孩子难独立使用"
 ];
 
 export const practicalCare = [

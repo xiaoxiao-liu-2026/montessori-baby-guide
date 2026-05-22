@@ -6,11 +6,9 @@ import {
   homePracticeCards,
   practicalCare,
   recommendedItems,
-  skipItems,
-  stages
+  skipItems
 } from "@/lib/content";
 import { SectionHeader } from "@/components/SectionHeader";
-import { StageCard } from "@/components/StageCard";
 import { VisualCard } from "@/components/VisualCard";
 import { MomCalmNote } from "@/components/MomCalmNote";
 import { PdfCard } from "@/components/PdfCard";
@@ -49,7 +47,7 @@ export default function HomePage() {
                 <ArrowRight size={18} />
               </Link>
               <Link
-                href="#stages"
+                href="/growth-calendar"
                 className="inline-flex min-h-12 items-center justify-center rounded-full border border-sage/35 bg-white/80 px-6 py-3 text-sm font-medium text-sageDark transition hover:bg-mist"
               >
                 从宝宝当前阶段开始
@@ -80,7 +78,7 @@ export default function HomePage() {
             {audiences.map((item) => (
               <div
                 key={item}
-                className="flex gap-3 rounded-lg border border-oatmeal bg-white p-4 text-sm leading-7 text-ink/74"
+                className="flex gap-3 rounded-lg border border-oatmeal bg-white p-4 text-[15px] leading-7 text-ink/76"
               >
                 <CheckCircle2 className="mt-1 shrink-0 text-sageDark" size={18} />
                 <span>{item}</span>
@@ -126,34 +124,12 @@ export default function HomePage() {
                   <h3 className="mt-4 text-lg font-semibold tracking-[0] text-ink">
                     {column.title}
                   </h3>
-                  <p className="mt-3 text-sm leading-7 text-ink/70">
+                  <p className="mt-3 text-[15px] leading-7 text-ink/74">
                     {column.description}
                   </p>
                 </Link>
               );
             })}
-          </div>
-        </div>
-      </section>
-
-      <section id="stages" className="bg-stone py-14 md:py-20">
-        <div className="page-shell">
-          <SectionHeader
-            eyebrow="成长月历"
-            title="0-3岁成长月历"
-            description="按阶段看懂宝宝可能的发展重点，不是用来打分，而是帮助妈妈更清楚地支持孩子。"
-          />
-          <div className="mt-8 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-            {stages.map((stage) => (
-              <StageCard
-                key={stage.age}
-                age={stage.age}
-                focus={stage.focus}
-                practice={stage.practice}
-                image={stage.image}
-                href={stage.href ?? "/growth-calendar"}
-              />
-            ))}
           </div>
         </div>
       </section>
@@ -194,7 +170,7 @@ export default function HomePage() {
               />
               <div className="p-6">
                 <p className="text-sm font-medium text-sageDark">更推荐</p>
-                <div className="mt-4 grid grid-cols-2 gap-3 text-sm text-ink/74">
+                <div className="mt-4 grid grid-cols-2 gap-3 text-[15px] leading-6 text-ink/78">
                   {recommendedItems.map((item) => (
                     <span key={item} className="rounded-lg bg-mist px-3 py-2">
                       {item}
@@ -210,8 +186,13 @@ export default function HomePage() {
                 className="aspect-[16/9] w-full bg-[#F7F2EA] object-cover"
               />
               <div className="p-6">
-                <p className="text-sm font-medium text-[#9A6844]">不急着买</p>
-                <div className="mt-4 space-y-3 text-sm text-ink/74">
+                <p className="text-base font-semibold text-[#9A6844]">
+                  不急着买：高刺激、低参与的玩具
+                </p>
+                <p className="mt-3 text-[15px] leading-7 text-ink/72">
+                  不是完全不能买，而是不急着买、不要盲买。这些玩具往往声音、灯光、按钮很多，但孩子真正主动操作和重复探索的机会不一定多。
+                </p>
+                <div className="mt-4 space-y-3 text-[15px] leading-6 text-ink/78">
                   {skipItems.map((item) => (
                     <div key={item} className="rounded-lg bg-[#F7F2EA] px-3 py-2">
                       {item}
@@ -247,9 +228,9 @@ export default function HomePage() {
             <SectionHeader
               eyebrow="资料下载"
               title="先领取一份简单资料"
-              description="如果你还不知道从哪里开始，可以先从一份简洁的成长月历或居家练习清单开始。"
+              description="如果你还不知道从哪里开始，可以先从成长月历简表和玩具选择判断表开始。"
             />
-            <div className="text-sm leading-7 text-ink/64">
+            <div className="text-[15px] leading-7 text-ink/70">
               资料会按照“能看懂、能打印、能照着做”的方向整理，后续可替换成正式 PDF 下载。
             </div>
           </div>
@@ -268,36 +249,37 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="bg-stone py-14 md:py-20">
-        <div className="page-shell grid gap-8 md:grid-cols-[0.9fr_1.1fr] md:items-center">
+      <section className="bg-stone py-10 md:py-12">
+        <div className="page-shell">
           <div>
-            <p className="text-sm font-medium text-sageDark">示例内容</p>
-            <h2 className="mt-3 text-2xl font-semibold tracking-[0] text-ink md:text-3xl">
+            <h2 className="text-2xl font-semibold tracking-[0] text-ink md:text-3xl">
               先看一个阶段示例：19-24个月
             </h2>
-            <p className="mt-4 text-base leading-8 text-ink/72">
+            <p className="mt-4 max-w-3xl text-base leading-8 text-ink/74">
               这个阶段，很多宝宝会更想“自己来”，也更容易因为流程被打乱、东西不在原位、想做但做不好而情绪爆发。
             </p>
-            <Link
-              href="/growth-calendar/19-24-months"
-              className="mt-7 inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-sageDark px-6 py-3 text-sm font-medium text-white transition hover:bg-olive"
-            >
-              查看19-24个月指南
-              <ArrowRight size={18} />
-            </Link>
           </div>
-          <div className="grid gap-4 sm:grid-cols-2">
+          <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
             {[
               ["可能的发展", "秩序感、独立意识、生活练习、情绪表达"],
               ["常见行为", "想自己倒水、穿鞋、拿东西；喜欢重复；东西放错地方会生气"],
               ["可以支持", "倒水、擦桌子、收纳、穿脱鞋袜、洗水果"],
               ["妈妈别慌", "这不是孩子事多，很多时候是发展正在发生"]
             ].map(([title, text]) => (
-              <article key={title} className="rounded-lg border border-oatmeal bg-white p-5 shadow-sm">
-                <h3 className="text-lg font-semibold tracking-[0] text-ink">{title}</h3>
-                <p className="mt-3 text-sm leading-7 text-ink/70">{text}</p>
+              <article key={title} className="rounded-lg border border-oatmeal bg-white p-4 shadow-sm">
+                <h3 className="text-base font-semibold tracking-[0] text-ink">{title}</h3>
+                <p className="mt-3 text-[15px] leading-7 text-ink/72">{text}</p>
               </article>
             ))}
+          </div>
+          <div>
+            <Link
+              href="/growth-calendar/19-24-months"
+              className="mt-6 inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-sageDark px-6 py-3 text-sm font-medium text-white transition hover:bg-olive"
+            >
+              查看19-24个月指南
+              <ArrowRight size={18} />
+            </Link>
           </div>
         </div>
       </section>
@@ -314,7 +296,7 @@ export default function HomePage() {
               {practicalCare.map((item) => (
                 <div
                   key={item}
-                  className="flex gap-3 rounded-lg border border-oatmeal bg-white p-4 text-sm leading-7 text-ink/72"
+                  className="flex gap-3 rounded-lg border border-oatmeal bg-white p-4 text-[15px] leading-7 text-ink/74"
                 >
                   <CheckCircle2 className="mt-1 shrink-0 text-sageDark" size={18} />
                   <span>{item}</span>

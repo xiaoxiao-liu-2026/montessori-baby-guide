@@ -103,14 +103,19 @@ export default function ToyGuidePage() {
             <article className="overflow-hidden rounded-lg border border-[#EED1B7] bg-white shadow-sm">
               <img
                 src={photos.toyNotPriority}
-                alt="不急着买的复杂声光电玩具插图"
+                alt="不急着买的高刺激低参与玩具插图"
                 className="aspect-[16/9] w-full bg-[#F7F2EA] object-cover"
               />
               <div className="p-6">
-                <p className="text-sm font-medium text-[#9A6844]">不急着买</p>
+                <p className="text-sm font-medium text-[#9A6844]">
+                  不急着买：高刺激、低参与的玩具
+                </p>
                 <h2 className="mt-2 text-2xl font-semibold tracking-[0] text-ink">
-                  看起来热闹但孩子参与少的产品
+                  不是不能买，而是不要盲买
                 </h2>
+                <p className="mt-4 text-[15px] leading-7 text-ink/72">
+                  这些玩具往往声音、灯光、按钮很多，但孩子真正主动操作和重复探索的机会不一定多。
+                </p>
                 <div className="mt-5 space-y-3 text-sm text-ink/74">
                   {skipItems.map((item) => (
                     <div key={item} className="rounded-lg bg-[#F7F2EA] px-3 py-2">

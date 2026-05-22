@@ -30,7 +30,7 @@ export function VisualCard({
       <div className="p-5">
         <h3 className="text-lg font-semibold tracking-[0] text-ink">{title}</h3>
         {description ? (
-          <p className="mt-3 text-sm leading-7 text-ink/70">{description}</p>
+          <p className="mt-3 text-[15px] leading-7 text-ink/74">{description}</p>
         ) : null}
       </div>
     </article>

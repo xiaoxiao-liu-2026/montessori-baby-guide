@@ -14,7 +14,7 @@ export function SectionHeader({ eyebrow, title, description }: SectionHeaderProp
         {title}
       </h2>
       {description ? (
-        <p className="mt-4 text-base leading-8 text-ink/72">{description}</p>
+        <p className="mt-4 text-base leading-8 text-ink/76">{description}</p>
       ) : null}
     </div>
   );
